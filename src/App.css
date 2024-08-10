@@ -39,13 +39,13 @@ header {
   height: calc(100vh - 4.0625rem);
   left: 0;
   right: 0;
-  background-image: url("./bg2.png");
+  background-image: url("../bg2.png");
   background-position: center center;
   background-size: cover;
   object-fit: cover;
   clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 65%);
   z-index: -1;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.19);
 }
 .banner_row{
   display: flex;
