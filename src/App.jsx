@@ -27,7 +27,7 @@ function App() {
                     awais</h1>
                   <h1 className='faryad my-0'>FARYAD</h1>
                   <p className='nameShort my-0'>A passionate FrontEnd Developer in React Js based In Lahore, PAK.</p>
-                  <p className='nameShort my-0'>Aspiring React Developer, 6 months of hands-on experience with <br /> HTML and CSS and 
+                  <p className='nameShort my-0'>Aspiring React Developer, 6 months of hands-on experience with HTML and CSS and 
                     3 months of experience with JavaScript and React.js.</p>
                   <div className="social">
                     <a className='btnHire' href="#">Hire Me  </a>
