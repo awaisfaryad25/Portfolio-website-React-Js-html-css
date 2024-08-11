@@ -26,9 +26,9 @@ function App() {
                   <img className="object-fit myM" src="./m.svg" alt="" />
                     awais</h1>
                   <h1 className='faryad my-0'>FARYAD</h1>
-                  <span className='nameShort my-0'>A passionate FrontEnd Developer in React Js based In Lahore, PAK.</span>
-                  <span className='nameShort my-0'>Aspiring React Developer, 6 months of hands-on experience with <br /> HTML and CSS and 
-                    3 months of experience with JavaScript and React.js.</span>
+                  <p className='nameShort my-0'>A passionate FrontEnd Developer in React Js based In Lahore, PAK.</p>
+                  <p className='nameShort my-0'>Aspiring React Developer, 6 months of hands-on experience with <br /> HTML and CSS and 
+                    3 months of experience with JavaScript and React.js.</p>
                   <div className="social">
                     <a className='btnHire' href="#">Hire Me  </a>
                     <img src="./hr.svg" alt="" />
