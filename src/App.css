@@ -3,7 +3,8 @@
 #root {
   --primary: #f5bd02;
   --secondary: #ff451b;
-  --gray1: #a7afbd;
+  --gray1:#494b50;
+  --gray2: #a7afbd;
   --white: #fff;
 
 color: var(--white);
@@ -18,10 +19,14 @@ body{
   src: url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-400-normal.woff) format('woff');
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
+h1,h2,h3,h4,h5,h6{
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .global-block {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+  /* position: relative; */
+  /* overflow: hidden; */
+  /* width: 100%; */
 }
 
 .my-0 {
@@ -38,7 +43,7 @@ header {
 }
 .container {
   width: 100%;
-  max-width: 1250px;
+  max-width: calc(1250px - 30px);
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -47,11 +52,11 @@ header {
 
 /* Bznner */
 .bannerRapper{
-  /* position: relative; */
+  position: relative;
 }
 .backBanner{
   position: absolute;
-  top: 0%;
+  top: -18%;
   height: calc(100vh - 4.0625rem);
   left: 0;
   right: 0;
@@ -97,7 +102,7 @@ header {
   color: var(--primary);
 }
 .nameShort{
-  color: var(--gray1);
+  color: var(--gray2);
 }
 .social{
   padding-top: 15px;
@@ -122,7 +127,6 @@ header {
   height: 40px;
 }
 
-
 .banner_col1 {
   width: 40%;
 }
@@ -131,13 +135,142 @@ header {
   max-height: 400px;
 }
 
+/* About Section */
+.about{
+  padding: 1rem 0.5rem;
+}
+.aboutMain{
+  padding-top: 1.5rem;
+  text-align: center;
+  background-color: var(--gray1);
+  border-radius: 1rem;
+}
+.aboutCol{
+  padding: 1rem;
+  text-align: start;
+}
+.aboutCol1{
+  padding: 1rem;
+  text-align: start;
+}
+.dataRap{
+  box-sizing:border-box;
+}
+
+.card{
+  border-radius: 0.8rem;
+}
+.cardImg{
+  display: none;
+}
+.cardInfo{
+  padding: 1.5rem 1rem;
+  background-color: var(--secondary);
+}
+.cardInfo h6{
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+.cardInfo strong{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.aboutTitle{
+  color: var(--primary);
+  font-weight: bolder;
+}
+.myRole{
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.btnRap{
+  padding: 1rem 0;
+  overflow: hidden;
+}
+.btn_cv {
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--secondary);
+  border-radius: 8px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+/* About End */
+@media (min-width: 992px){
+  .aboutRow{
+    display: flex;
+    gap: 1rem;
+  }
+  .aboutCol{
+    width: 55%;
+  }
+  .aboutCol1{
+    width: 45%;
+    height: auto;
+  }
+  .cardImg{
+    max-width: 15rem;
+  }
+}
+
+@media (min-width: 767px){
+  .about{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .cardImg{
+    max-width: 29rem;
+    height: 35rem;
+    background-size: contain;
+  }
+  .cardImg img{
+    border-radius: 1rem;
+  }
+
+  .myRole{
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 540px){
+  .about{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .imageRapper{
+    position: relative !important;
+    box-sizing: border-box;
+  }
+  .cardImg{
+   display: block;
+    width: 60%;
+   /* max-width: 15rem; */
+
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word;
+   background-clip: border-box;
+  }
+  .cardInfo{
+    position: absolute;
+    top: 2rem;
+    left: 47%;
+    width:auto;
+    word-break: break-word;
+
+  }
+}
+
 @media (max-width: 767px){
   .container{
     padding-left: 0;
     padding-right: 0;
-  }
-  header{
-    /* display: none; */
   }
   .banner_row{
     flex-wrap: wrap-reverse;

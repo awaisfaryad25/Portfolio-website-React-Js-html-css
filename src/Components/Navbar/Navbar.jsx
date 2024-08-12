@@ -11,8 +11,8 @@ const Navbar = () => {
           </a>
           <div className="navCenter">
             <ul className="list">
-              <li className="list_item"><a className="list_item-link" href="#">Home</a></li>
-              <li className="list_item"><a className="list_item-link" href="#">About</a></li>
+              <li className="list_item"><a className="list_item-link" href="#home">Home</a></li>
+              <li className="list_item"><a className="list_item-link" href="#about">About</a></li>
               <li className="list_item"><a className="list_item-link" href="#">Resume</a></li>
               <li className="list_item"><a className="list_item-link" href="#">Portfolio</a></li>
               <li className="list_item"><a className="list_item-link" href="#">Testimonial</a></li>
