@@ -119,7 +119,8 @@ function App() {
                           <strong>awaisfaryad25@gmail.com</strong>
                           <hr />
                           <h6>Address</h6>
-                          <strong>Wapda Town, Lahore</strong>
+                          <address>Wapda Town, Lahore</address>
+                          <strong></strong>
                           <hr />
                         </div>
                       </div>
@@ -148,6 +149,117 @@ function App() {
                         </div>
                       </div>
                       <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="resume">
+          <div className="resumeRapper">
+            <div className="container">
+              <div className="resume">
+                <div className="resumeMain">
+                  <h2 className="resumeTitle">My Resume</h2>
+                  <div className="resumeRow">
+                    <div className="resumeCol">
+                      <div className="experience">
+                        <h3>Experience</h3>
+                        <div className="company">
+                          <h4>Shopify Frontend Developer</h4>
+                          <span className="lightText">Alpha Rages, High Q. Tower Lahore </span>
+                          <blockquote className="lightText">
+                            Design and develop custom Shopify themes to enhance user experience and drive sales.
+                            Collaborate with design and marketing teams to implement responsive and user-friendly interfaces.
+                            Utilize HTML, CSS, JavaScript, and Liquid to create and customize Shopify themes.
+                          </blockquote>
+                        </div>
+                        <div className="company">
+                          <h4>Frontend Internship</h4>
+                          <span className="lightText">Enigmatix PVT Ltd. Bahawalpur  </span>
+                          <blockquote className="lightText">
+                            This Internship was intended to learn frontend development. 
+                            I’ve complete grip on frontend development with mobile responsive and have practiced basics of react library.
+                          </blockquote>
+                        </div>
+                        
+                      </div>
+                      <hr />
+                      <div className="projectRapper">
+                        <h3>Projects</h3>
+                        <div className="project">
+                          <h4 className="project_title">Todo List App in React Js.</h4>
+                          <span className="project_subtitle lightText">Technologies:</span>
+                          <blockquote className="project_descript lightText">
+                            React Js, HTML, CSS and JavaScript.
+                          </blockquote>
+                          <span className="project_subtitle lightText">Description:</span>
+                          <blockquote className="project_descript lightText">
+                            Task add, update and delete. After a task done you can move to task submit/done list. 
+                          </blockquote>
+                        </div>
+
+                        <div className="project">
+                          <h4 className="project_title">Motu Dev Store</h4>
+                          <span className="project_subtitle lightText">Technologies:</span>
+                          <blockquote className="project_descript lightText">
+                            HTML, CSS and JavaScript.
+                          </blockquote>
+                          <span className="project_subtitle lightText">Description:</span>
+                          <blockquote className="project_descript lightText">
+                          Design different sections of e-commerce website. i.e. Mega Menu, Product details card, contact us.
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                    {/* Right Col */}
+                    <div className="resumeCol1">
+                      <div className="education">
+                        <h3>Education</h3>
+                        <h4>BS in Computer Science</h4>
+                        <span className="lightText">COMSATS University Islamabad</span>
+                      </div>
+                      <hr />
+                      <div className="professionalSkills">
+                        <h3>SKILLS</h3>
+                        <h4>Languages</h4>
+                        <blockquote>
+                          <h5>HTML5</h5>
+                          <progress value={85} max={100}></progress>
+                          <h5>CSS</h5>
+                          <progress value={75} max={100}></progress>
+                          <h5>SASS</h5>
+                          <progress value={75} max={100}></progress>
+                          <h5>JavaScript</h5>
+                          <progress value={75} max={100}></progress>
+                        </blockquote>
+                        <hr />
+                        <h4>Framework / Libraries</h4>
+                        <blockquote>
+                          <h5>React Js</h5>
+                          <progress value={55} max={100}></progress>
+                          <h5>Tailwind</h5>
+                          <progress value={85} max={100}></progress>
+                          <h5>Material Ui</h5>
+                          <progress value={65} max={100}></progress>
+                        </blockquote>
+
+                      </div>
+                      <hr />
+                      <div className="otherSkills">
+                        <h3>Other Skills</h3>
+                        <blockquote>
+                        <h5>Figma</h5>
+                        <progress value={85} max={100}></progress>
+                        <h5>XD</h5>
+                        <progress value={95} max={100}></progress>
+                        <h5>Photoshop</h5>
+                        <progress value={50} max={100}></progress>
+                        <h5>Git</h5>
+                        <progress value={55} max={100}></progress>
+                        </blockquote>
+                      </div>
                     </div>
                   </div>
                 </div>
