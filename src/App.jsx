@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <header>
+      <header id="header">
         <Navbar />
       </header>
       <main id="home">
@@ -28,6 +28,7 @@ function App() {
                         awais
                       </h1>
                       <h1 className="faryad my-0">FARYAD</h1>
+                      <br />
                       <p className="nameShort my-0">
                         A passionate FrontEnd Developer in React Js based In
                         Lahore, PAK.
@@ -43,7 +44,7 @@ function App() {
                         </a>
                         <img src="./hr.svg" alt="" />
                         <span>Follow Me</span>
-                        <ul className="list --list-style">
+                        <ul className=" --list-style list">
                           <li className="list_item">
                             <a className="list_item-icn" href="">
                               <img

@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav id="navbar">
        <div className="container">
         <div className="navRow">
           <a href="#" className="logo">
@@ -25,7 +25,12 @@ const Navbar = () => {
               Download CV
             </a>
           </div>
-          {/* <h1>M Awais Faryad</h1> */}
+          <div className="menu">
+            <button className="btn_menu" href="#">
+              <img className="object-fit menu_open" src="./Menu.svg" alt="" />
+              <img className="object-fit menu_close" src="./Cross.svg" alt="" />
+            </button>
+          </div>
         </div>
        </div>
       </nav>
