@@ -234,7 +234,7 @@ function App() {
                           <h5>JavaScript</h5>
                           <progress value={75} max={100}></progress>
                         </blockquote>
-                        <hr />
+
                         <h4>Framework / Libraries</h4>
                         <blockquote>
                           <h5>React Js</h5>
@@ -245,20 +245,19 @@ function App() {
                           <progress value={65} max={100}></progress>
                         </blockquote>
 
+                        <h4>Tools</h4>
+                        <blockquote>
+                        <h5>Git</h5>
+                        <progress value={55} max={100}></progress>
+                        <h5>Figma</h5>
+                        <progress value={85} max={100}></progress>
+                        <h5>Photoshop</h5>
+                        <progress value={50} max={100}></progress>
+                        </blockquote>
                       </div>
                       <hr />
                       <div className="otherSkills">
                         <h3>Other Skills</h3>
-                        <blockquote>
-                        <h5>Figma</h5>
-                        <progress value={85} max={100}></progress>
-                        <h5>XD</h5>
-                        <progress value={95} max={100}></progress>
-                        <h5>Photoshop</h5>
-                        <progress value={50} max={100}></progress>
-                        <h5>Git</h5>
-                        <progress value={55} max={100}></progress>
-                        </blockquote>
                       </div>
                     </div>
                   </div>
