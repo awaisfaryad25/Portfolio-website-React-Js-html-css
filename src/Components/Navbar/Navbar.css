@@ -95,21 +95,24 @@
   box-sizing: border-box;
   position: relative;
 }
+
 .menu_close{
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 17%;
+  left: 17%;
   width: 1.5rem;
   height: 1.5rem;
   display: none;
 }
-
+.open{
+  display: inline-block;
+}
+.close{
+  display: none;
+}
 
 /* -------------------------------- Media Query  ///////////////// */
 @media (min-width: 767px){
-  /* #desk_nav{
-    display: flex;
-  } */
   .navRow{
     justify-content: space-around;
   }

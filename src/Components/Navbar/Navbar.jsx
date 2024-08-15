@@ -49,8 +49,8 @@ const Navbar = () => {
           </div>
           <div className="menu">
             <button className="btn_menu nav__toggle" href="#" onClick={toggleMenu}>
-              <img className="object-fit menu_close" src="./Cross.svg" alt="" />
-              <img className="object-fit menu_open" src="./Menu.svg" alt="" />
+              <img className={`object-fit menu_open ${isActive ? 'close' : ''}`} src="./Menu.svg" alt="" />
+              <img  className={`object-fit menu_close ${isActive ? 'open' : ''}`} src="./Cross.svg" alt="" />
             </button>
           </div>
         </div>
