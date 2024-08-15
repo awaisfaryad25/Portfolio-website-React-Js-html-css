@@ -26,19 +26,19 @@ const Navbar = () => {
                 <a className="list_item-link" href="#about">About</a>
               </li>
               <li className="list_item">
-                <a className="list_item-link" href="#">Resume</a>
+                <a className="list_item-link" href="#resume">Resume</a>
               </li>
               <li className="list_item">
-                <a className="list_item-link" href="#">Portfolio</a>
+                <a className="list_item-link" href="#portfolio">Portfolio</a>
               </li>
               <li className="list_item">
-                <a className="list_item-link" href="#">Testimonial</a>
+                <a className="list_item-link" href="#testimonial">Testimonial</a>
               </li>
               <li className="list_item">
-                <a className="list_item-link" href="#">Blog</a>
+                <a className="list_item-link" href="#blog">Blog</a>
               </li>
               <li className="list_item">
-                <a className="list_item-link" href="#">Contact</a>
+                <a className="list_item-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
