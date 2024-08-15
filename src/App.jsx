@@ -166,9 +166,9 @@ function App() {
                     {/* Let Col */}
                     <div className="resumeCol">
                       <div className="experience">
-                        <h3>Experience</h3>
+                        <h3 className="resume_mainHeading">Experience</h3>
                         <div className="company">
-                          <h4>Shopify Frontend Developer</h4>
+                          <h4 className="resume_subHeading">Shopify Frontend Developer</h4>
                           <span className="lightText">Alpha Rages, High Q. Tower Lahore </span>
                           <blockquote className="lightText mt-0">
                             Design and develop custom Shopify themes to enhance user experience and drive sales.
@@ -177,7 +177,7 @@ function App() {
                           </blockquote>
                         </div>
                         <div className="company">
-                          <h4>Frontend Internship</h4>
+                          <h4 className="resume_subHeading">Frontend Internship</h4>
                           <span className="lightText">Enigmatix PVT Ltd. Bahawalpur  </span>
                           <blockquote className="lightText mt-0">
                             This Internship was intended to learn frontend development. 
@@ -188,7 +188,7 @@ function App() {
                       </div>
                       <hr />
                       <div className="projectRapper">
-                        <h3>Projects</h3>
+                        <h3 className="resume_mainHeading">Projects</h3>
                         <div className="project">
                           <h4 className="project_title">Todo List App in React Js.</h4>
                           <span className="project_subtitle lightText">Technologies:</span>
@@ -202,6 +202,18 @@ function App() {
                         </div>
 
                         <div className="project">
+                          <h4 className="project_title">Personal Portfolio</h4>
+                          <span className="project_subtitle lightText">Technologies:</span>
+                          <blockquote className="project_descript lightText my-0">
+                            React Js, HTML, CSS and JavaScript.
+                          </blockquote>
+                          <span className="project_subtitle lightText">Description:</span>
+                          <blockquote className="project_descript lightText mt-0">
+                          Developed a comprehensive and visually appealing portfolio website using React.js. The site showcases my skills, projects, and expertise in web development, emphasizing my proficiency in frontend development and modern JavaScript frameworks.
+                          </blockquote>
+                        </div>
+
+                        <div className="project">
                           <h4 className="project_title">Motu Dev Store</h4>
                           <span className="project_subtitle lightText">Technologies:</span>
                           <blockquote className="project_descript lightText my-0">
@@ -209,7 +221,7 @@ function App() {
                           </blockquote>
                           <span className="project_subtitle lightText">Description:</span>
                           <blockquote className="project_descript lightText mt-0">
-                          Design different sections of e-commerce website. i.e. Mega Menu, Product details card, contact us.
+                          Design different sections of e-commerce website. i.e. Header, Footer, Mega Menu, Product details card, contact us, cart-page.
                           </blockquote>
                         </div>
                       </div>
@@ -217,14 +229,14 @@ function App() {
                     {/* Right Col */}
                     <div className="resumeCol1">
                       <div className="education">
-                        <h3>Education</h3>
-                        <h4>BS in Computer Science</h4>
+                        <h3 className="resume_mainHeading">Education</h3>
+                        <h4 className="resume_subHeading">BS in Computer Science</h4>
                         <span className="lightText">COMSATS University Islamabad</span>
                       </div>
                       <hr />
                       <div className="professionalSkills">
-                        <h3>SKILLS</h3>
-                        <h4>Languages</h4>
+                        <h3 className="resume_mainHeading">SKILLS</h3>
+                        <h4 className="resume_subHeading">Languages</h4>
                         <blockquote className="mt-0">
                           <h5>HTML5</h5>
                           <progress value={85} max={100}></progress>
@@ -236,7 +248,7 @@ function App() {
                           <progress value={75} max={100}></progress>
                         </blockquote>
 
-                        <h4>Framework / Libraries</h4>
+                        <h4 className="resume_subHeading">Framework / Libraries</h4>
                         <blockquote className="mt-0">
                           <h5>React Js</h5>
                           <progress value={55} max={100}></progress>
@@ -246,10 +258,10 @@ function App() {
                           <progress value={65} max={100}></progress>
                         </blockquote>
 
-                        <h4>Tools</h4>
+                        <h4 className="resume_subHeading">Tools</h4>
                         <blockquote className="mt-0">
-                        <h5>Git</h5>
-                        <progress value={55} max={100}></progress>
+                        <h5 className="my-0">Git</h5>
+                        <progress  className="my-0" value={55} max={100}></progress>
                         <h5>Figma</h5>
                         <progress value={85} max={100}></progress>
                         <h5>Photoshop</h5>
@@ -258,7 +270,18 @@ function App() {
                       </div>
                       <hr />
                       <div className="otherSkills">
-                        <h3>Other Skills</h3>
+                        <h3 className="resume_mainHeading">Other Skills</h3>
+                        <blockquote>
+                          <h5>Responsive Design</h5>
+                          <progress value={90} max={100}></progress>
+
+                          <h5>Ui Design</h5>
+                          <progress value={80} max={100}></progress>
+
+                          <h5>Graphic Design</h5>
+                          <progress value={60} max={100}></progress>
+                        </blockquote>
+                        
                       </div>
                     </div>
                   </div>

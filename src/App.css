@@ -201,6 +201,7 @@ progress{
   border-radius: 3rem;
   -webkit-appearance: none; 
   appearance: none;
+  width: 100%;
 }
 progress::-webkit-progress-bar {
   background-color: var(--gray2);
@@ -297,7 +298,25 @@ progress::-webkit-progress-value {
   }
 
   .myRole{
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+  /* Resume */
+  .resumeRow{
+    display: flex;
+    padding: 1rem;
+  }
+  .resumeCol{
+    width: 60%;
+  }
+  .resumeCol1{
+    width: 40%;
+  }
+  .resume_mainHeading{
+    font-size: 2rem;
+  }
+  .project_title,
+  .resume_subHeading{
+    font-size: 1.3rem;
   }
 }
 
@@ -334,5 +353,10 @@ progress::-webkit-progress-value {
     width:auto;
     word-break: break-word;
 
+  }
+  /* Resume */
+  .resume{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
