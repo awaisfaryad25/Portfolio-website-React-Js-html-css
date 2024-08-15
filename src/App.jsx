@@ -163,13 +163,14 @@ function App() {
                 <div className="resumeMain">
                   <h2 className="resumeTitle">My Resume</h2>
                   <div className="resumeRow">
+                    {/* Let Col */}
                     <div className="resumeCol">
                       <div className="experience">
                         <h3>Experience</h3>
                         <div className="company">
                           <h4>Shopify Frontend Developer</h4>
                           <span className="lightText">Alpha Rages, High Q. Tower Lahore </span>
-                          <blockquote className="lightText">
+                          <blockquote className="lightText mt-0">
                             Design and develop custom Shopify themes to enhance user experience and drive sales.
                             Collaborate with design and marketing teams to implement responsive and user-friendly interfaces.
                             Utilize HTML, CSS, JavaScript, and Liquid to create and customize Shopify themes.
@@ -178,7 +179,7 @@ function App() {
                         <div className="company">
                           <h4>Frontend Internship</h4>
                           <span className="lightText">Enigmatix PVT Ltd. Bahawalpur  </span>
-                          <blockquote className="lightText">
+                          <blockquote className="lightText mt-0">
                             This Internship was intended to learn frontend development. 
                             I’ve complete grip on frontend development with mobile responsive and have practiced basics of react library.
                           </blockquote>
@@ -191,11 +192,11 @@ function App() {
                         <div className="project">
                           <h4 className="project_title">Todo List App in React Js.</h4>
                           <span className="project_subtitle lightText">Technologies:</span>
-                          <blockquote className="project_descript lightText">
+                          <blockquote className="project_descript lightText my-0">
                             React Js, HTML, CSS and JavaScript.
                           </blockquote>
-                          <span className="project_subtitle lightText">Description:</span>
-                          <blockquote className="project_descript lightText">
+                          <span className="project_subtitle lightText ">Description:</span>
+                          <blockquote className="project_descript lightText mt-0">
                             Task add, update and delete. After a task done you can move to task submit/done list. 
                           </blockquote>
                         </div>
@@ -203,11 +204,11 @@ function App() {
                         <div className="project">
                           <h4 className="project_title">Motu Dev Store</h4>
                           <span className="project_subtitle lightText">Technologies:</span>
-                          <blockquote className="project_descript lightText">
+                          <blockquote className="project_descript lightText my-0">
                             HTML, CSS and JavaScript.
                           </blockquote>
                           <span className="project_subtitle lightText">Description:</span>
-                          <blockquote className="project_descript lightText">
+                          <blockquote className="project_descript lightText mt-0">
                           Design different sections of e-commerce website. i.e. Mega Menu, Product details card, contact us.
                           </blockquote>
                         </div>
@@ -224,7 +225,7 @@ function App() {
                       <div className="professionalSkills">
                         <h3>SKILLS</h3>
                         <h4>Languages</h4>
-                        <blockquote>
+                        <blockquote className="mt-0">
                           <h5>HTML5</h5>
                           <progress value={85} max={100}></progress>
                           <h5>CSS</h5>
@@ -236,7 +237,7 @@ function App() {
                         </blockquote>
 
                         <h4>Framework / Libraries</h4>
-                        <blockquote>
+                        <blockquote className="mt-0">
                           <h5>React Js</h5>
                           <progress value={55} max={100}></progress>
                           <h5>Tailwind</h5>
@@ -246,7 +247,7 @@ function App() {
                         </blockquote>
 
                         <h4>Tools</h4>
-                        <blockquote>
+                        <blockquote className="mt-0">
                         <h5>Git</h5>
                         <progress value={55} max={100}></progress>
                         <h5>Figma</h5>
