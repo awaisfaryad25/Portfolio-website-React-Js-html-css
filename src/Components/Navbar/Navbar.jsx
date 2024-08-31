@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className={`navCenter ${isActive ? 'show' : ''}`} >
             <ul className="list">
               <li className="list_item">
-                <a className="list_item-link active" href="#home">Home</a>
+                <a className="list_item-link active home" href="#home">Home</a>
               </li>
               <li className="list_item">
                 <a className="list_item-link" href="#about">About</a>
@@ -32,10 +32,10 @@ const Navbar = () => {
                 <a className="list_item-link" href="#portfolio">Portfolio</a>
               </li>
               <li className="list_item">
-                <a className="list_item-link" href="#testimonial">Testimonial</a>
+                <a className="list_item-link" href="#blog">Services</a>
               </li>
               <li className="list_item">
-                <a className="list_item-link" href="#blog">Blog</a>
+                <a className="list_item-link" href="#testimonial">Feedback</a>
               </li>
               <li className="list_item">
                 <a className="list_item-link" href="#contact">Contact</a>

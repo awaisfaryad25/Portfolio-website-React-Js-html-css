@@ -161,7 +161,7 @@ function App() {
             <div className="container">
               <div className="resume">
                 <div className="resumeMain">
-                  <h2 className="resumeTitle">My Resume</h2>
+                  <h2 className="resumeTitle goldenText">My Resume</h2>
                   <div className="resumeRow">
                     {/* Let Col */}
                     <div className="resumeCol">
@@ -282,6 +282,149 @@ function App() {
                           <progress value={60} max={100}></progress>
                         </blockquote>
                         
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Portfolio */}
+        <section id="portfolio">
+          <div className="portfolioRapper">
+            <div className="container">
+              <div className="portfolio">
+                <div className="portfolioMain">
+                  <h2 className="portfolioTitle goldenText">My Portfolio</h2>
+                  <h3>My work that I did for my clients</h3>
+                  <div className="portfolio_cetagory">
+                    <a className="portfolio_cetagory-link" href="">All</a>
+                    <a className="portfolio_cetagory-link" href="">Populer</a>
+                    <a className="portfolio_cetagory-link" href="">Latest</a>
+                  </div>
+                  <div className="portfolioRow">
+                    <div className="portfolioCol">
+                      <div className="product">
+                        <img className="object-fit" src="/carRantel.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div className="portfolioCol">
+                      <div className="product">
+                        <img className="object-fit" src="/pizza-point.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div className="portfolioCol">
+                      <div className="product">
+                        <img className="object-fit" src="/G14.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div className="portfolioCol">
+                      <div className="product">
+                        <img className="object-fit" src="/G1.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div className="portfolioCol">
+                      <div className="product">
+                        <img className="object-fit" src="/T1.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div className="portfolioCol">
+                      <div className="product">
+                        <img className="object-fit" src="/cards1.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Services */}
+        <section id="services">
+          <div className="servicesRapper">
+            <div className="container">
+              <div className="services">
+                <div className="servicesMain">
+                  <h2 className="servicesTitle goldenText">Services</h2>
+                  <h3>Never compromise with quality</h3>
+                  <div className="servicesRow">
+                    <div className="servicesCol">
+                      <div className="card servicesCard">
+                        <div className="service-logo logo-react">
+                          <div className="card-logo">
+                            <img className="object-fit" src="/react.svg" alt="" />
+                          </div>
+                        </div>
+                        <div className="card-brief">
+                          <h4 className="servicesTitle">Web Development</h4>
+                          <span>Web development is the building and maintenance of websites. it's the work that...</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="servicesCol">
+                      <div className="card servicesCard">
+                        <div className="service-logo logo-react">
+                          <div className="card-logo">
+                            <img className="object-fit" src="/mobile.png" alt="" />
+                          </div>
+                        </div>
+                        <div className="card-brief">
+                          <h4 className="servicesTitle">UI / UX Design</h4>
+                          <span>Web development is the building and maintenance of websites. it's the work that...</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="servicesCol">
+                      <div className="card servicesCard">
+                        <div className="service-logo logo-react">
+                          <div className="card-logo">
+                            <img className="object-fit" src="/react.svg" alt="" />
+                          </div>
+                        </div>
+                        <div className="card-brief">
+                          <h4 className="servicesTitle">Graphic Design</h4>
+                          <span>Web development is the building and maintenance of websites. it's the work that...</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="servicesCol">
+                      <div className="card servicesCard">
+                        <div className="service-logo logo-react">
+                          <div className="card-logo">
+                            <img className="object-fit" src="/wordpress.svg" alt="" />
+                          </div>
+                        </div>
+                        <div className="card-brief">
+                          <h4 className="servicesTitle">CMS Design</h4>
+                          <span>Web development is the building and maintenance of websites. it's the work that...</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="servicesCol">
+                      <div className="card servicesCard">
+                        <div className="service-logo logo-react">
+                          <div className="card-logo">
+                            <img className="object-fit" src="/writing.png" alt="" />
+                          </div>
+                        </div>
+                        <div className="card-brief">
+                          <h4 className="servicesTitle">Content Writing</h4>
+                          <span>Web development is the building and maintenance of websites. it's the work that...</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="servicesCol">
+                      <div className="card servicesCard">
+                        <div className="service-logo logo-react">
+                          <div className="card-logo">
+                            <img className="object-fit" src="/react.svg" alt="" />
+                          </div>
+                        </div>
+                        <div className="card-brief">
+                          <h4 className="servicesTitle">Data Entry</h4>
+                          <span>Web development is the building and maintenance of websites. it's the work that...</span>
+                        </div>
                       </div>
                     </div>
                   </div>
