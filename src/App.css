@@ -259,6 +259,8 @@ progress::-webkit-progress-value {
 }
 .product{
   position: relative;
+  overflow: hidden;
+  height: 230px;
 }
 .product_brief{
   text-align: center;
@@ -275,7 +277,10 @@ progress::-webkit-progress-value {
   backdrop-filter: blur(10px);
   transition: 0.5s;
   opacity: 0;
-  overflow: hidden;
+  overflow: auto;
+}
+.product_brief::-webkit-scrollbar {
+  display: none;
 }
 .product img {
   border-radius: 0.7rem;

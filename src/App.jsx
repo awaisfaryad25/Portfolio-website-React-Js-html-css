@@ -316,26 +316,46 @@ function App() {
                     <div className="portfolioCol">
                       <div className="product">
                         <img className="object-fit" src="/pizza-point.jpg" alt="" />
+                        <div className="product_brief">
+                          <h4>Kashmiri Pizza</h4>
+                          <p className="my-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, et at nam facere reiciendis sequi rem aliquam deleniti porro sit distinctio, rerum minima, qui neque nesciunt a temporibus molestias similique.</p>
+                        </div>
                       </div>
                     </div>
                     <div className="portfolioCol">
                       <div className="product">
                         <img className="object-fit" src="/G14.jpg" alt="" />
+                        <div className="product_brief">
+                          <h4>Plant Growing App</h4>
+                          <p className="my-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, et at nam facere reiciendis sequi rem aliquam deleniti porro sit distinctio, rerum minima, qui neque nesciunt a temporibus molestias similique.</p>
+                        </div>
                       </div>
                     </div>
                     <div className="portfolioCol">
                       <div className="product">
                         <img className="object-fit" src="/G1.jpg" alt="" />
+                        <div className="product_brief">
+                          <h4>Another Planting App</h4>
+                          <p className="my-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, et at nam facere reiciendis sequi rem aliquam deleniti porro sit distinctio, rerum minima, qui neque nesciunt a temporibus molestias similique.</p>
+                        </div>
                       </div>
                     </div>
                     <div className="portfolioCol">
                       <div className="product">
                         <img className="object-fit" src="/T1.jpg" alt="" />
+                        <div className="product_brief">
+                          <h4>Admin Dadhboard</h4>
+                          <p className="my-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, et at nam facere reiciendis sequi rem aliquam deleniti porro sit distinctio, rerum minima, qui neque nesciunt a temporibus molestias similique.</p>
+                        </div>
                       </div>
                     </div>
                     <div className="portfolioCol">
                       <div className="product">
                         <img className="object-fit" src="/cards1.png" alt="" />
+                        <div className="product_brief">
+                          <h4>Shoes Store</h4>
+                          <p className="my-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, et at nam facere reiciendis sequi rem aliquam deleniti porro sit distinctio, rerum minima, qui neque nesciunt a temporibus molestias similique.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
