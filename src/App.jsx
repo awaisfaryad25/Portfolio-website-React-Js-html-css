@@ -306,7 +306,11 @@ function App() {
                   <div className="portfolioRow">
                     <div className="portfolioCol">
                       <div className="product">
-                        <img className="object-fit" src="/carRantel.jpg" alt="" />
+                        <img className="object-fit product_img" src="/carRantel.jpg" alt="" />
+                        <div className="product_brief">
+                          <h4>Car Rental Service</h4>
+                          <p className="my-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, et at nam facere reiciendis sequi rem aliquam deleniti porro sit distinctio, rerum minima, qui neque nesciunt a temporibus molestias similique.</p>
+                        </div>
                       </div>
                     </div>
                     <div className="portfolioCol">
@@ -366,7 +370,7 @@ function App() {
                       <div className="card servicesCard">
                         <div className="service-logo logo-react">
                           <div className="card-logo">
-                            <img className="object-fit" src="/mobile.png" alt="" />
+                            <img className="object-fit" src="/uiux.png" alt="" />
                           </div>
                         </div>
                         <div className="card-brief">
@@ -379,7 +383,7 @@ function App() {
                       <div className="card servicesCard">
                         <div className="service-logo logo-react">
                           <div className="card-logo">
-                            <img className="object-fit" src="/react.svg" alt="" />
+                            <img className="object-fit" src="/paint.png" alt="" />
                           </div>
                         </div>
                         <div className="card-brief">

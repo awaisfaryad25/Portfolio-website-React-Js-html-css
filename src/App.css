@@ -257,10 +257,40 @@ progress::-webkit-progress-value {
   margin-left: auto;
   margin-right: auto;
 }
+.product{
+  position: relative;
+}
+.product_brief{
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: 0.5s;
+  opacity: 0;
+  overflow: hidden;
+}
 .product img {
   border-radius: 0.7rem;
 }
-
+.product:hover .product_brief{
+  top: 0;
+  opacity: 1;
+}
+.product_brief h4 {
+  color: var(--secondary);
+}
+.product_brief p {
+  text-align: start;
+  color: var(--gray1);
+}
 .servicesCard{
   background-color: var(--gray3);
   padding: 1.5rem;
