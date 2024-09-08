@@ -5,7 +5,7 @@ import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/400-italic.css";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
-
+import ClientSlider from "./Components/ClientSlider/ClientSlider";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -451,6 +451,22 @@ function App() {
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* feedback */}
+        <section id="feedback">
+          <div className="feedbackRapper">
+            <div className="container">
+              <div className="feedback">
+                <div className="feedbackMain">
+                  <h2 className="feedbackTitle goldenText">Feedback</h2>
+                  <h3>What People Say About Me</h3>
+                  <div className="feedbackRow">
+                    <ClientSlider/>
                   </div>
                 </div>
               </div>
