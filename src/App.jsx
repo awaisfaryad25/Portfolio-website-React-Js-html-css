@@ -46,7 +46,7 @@ function App() {
                         <span>Follow Me</span>
                         <ul className=" --list-style list">
                           <li className="list_item">
-                            <a className="list_item-icn" href="">
+                            <a className="list_item-icn" target="blank" href="https://www.linkedin.com/in/awaisfaryad?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                               <img
                                 className="object-fit"
                                 src="./in.svg"
@@ -55,7 +55,7 @@ function App() {
                             </a>
                           </li>
                           <li className="list_item">
-                            <a className="list_item-icn" href="">
+                            <a className="list_item-icn" target="blank" href="https://www.instagram.com/awaiswolf?igsh=YmNla2JxbDB1Ymli">
                               <img
                                 className="object-fit"
                                 src="./insta.svg"
@@ -64,7 +64,7 @@ function App() {
                             </a>
                           </li>
                           <li className="list_item">
-                            <a className="list_item-icn" href="">
+                            <a className="list_item-icn" target="blank" href="https://www.facebook.com/awaisfaryad25/">
                               <img
                                 className="object-fit"
                                 src="./fb.svg"
