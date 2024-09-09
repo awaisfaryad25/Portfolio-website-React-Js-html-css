@@ -57,6 +57,20 @@
   justify-content: end;
 }
 
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 0.2rem;
+}
+
+.dots button{
+  border: none;
+}
+.dots .active-dot{
+  background-color: var(--secondary);
+}
+
 @media (min-width: 680px) {
   .sliderRapper {
     display: flex;

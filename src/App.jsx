@@ -24,7 +24,7 @@ function App() {
                     <div className="bannerData">
                       <br />
                       <h1 className="awais my-0">
-                        <img className="object-fit myM" src="./m.svg" alt="" />
+                        <img className=" myM" src="./m.svg" alt="" />
                         awais
                       </h1>
                       <h1 className="faryad my-0">FARYAD</h1>
