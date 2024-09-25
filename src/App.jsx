@@ -6,6 +6,18 @@ import "@fontsource/poppins/400-italic.css";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import ClientSlider from "./Components/ClientSlider/ClientSlider";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+
+const mapContainerStyle = {
+  width: "100%",
+  height: "400px",
+};
+
+const center = {
+  lat: 37.7749, // Example latitude
+  lng: -122.4194, // Example longitude
+};
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -46,7 +58,11 @@ function App() {
                         <span>Follow Me</span>
                         <ul className=" --list-style list">
                           <li className="list_item">
-                            <a className="list_item-icn" target="blank" href="https://www.linkedin.com/in/awaisfaryad?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                            <a
+                              className="list_item-icn"
+                              target="blank"
+                              href="https://www.linkedin.com/in/awaisfaryad?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            >
                               <img
                                 className="object-fit"
                                 src="./in.svg"
@@ -55,7 +71,11 @@ function App() {
                             </a>
                           </li>
                           <li className="list_item">
-                            <a className="list_item-icn" target="blank" href="https://www.instagram.com/awaiswolf?igsh=YmNla2JxbDB1Ymli">
+                            <a
+                              className="list_item-icn"
+                              target="blank"
+                              href="https://www.instagram.com/awaiswolf?igsh=YmNla2JxbDB1Ymli"
+                            >
                               <img
                                 className="object-fit"
                                 src="./insta.svg"
@@ -64,7 +84,11 @@ function App() {
                             </a>
                           </li>
                           <li className="list_item">
-                            <a className="list_item-icn" target="blank" href="https://www.facebook.com/awaisfaryad25/">
+                            <a
+                              className="list_item-icn"
+                              target="blank"
+                              href="https://www.facebook.com/awaisfaryad25/"
+                            >
                               <img
                                 className="object-fit"
                                 src="./fb.svg"
@@ -145,7 +169,9 @@ function App() {
                           commodi nihil!
                         </p>
                         <div className="btnRap">
-                        <a className="btn btn_cv" href="">Download CV</a>
+                          <a className="btn btn_cv" href="">
+                            Download CV
+                          </a>
                         </div>
                       </div>
                       <br />
@@ -168,60 +194,93 @@ function App() {
                       <div className="experience">
                         <h3 className="resume_mainHeading">Experience</h3>
                         <div className="company">
-                          <h4 className="resume_subHeading">Shopify Frontend Developer</h4>
-                          <span className="lightText">Alpha Rages, High Q. Tower Lahore </span>
+                          <h4 className="resume_subHeading">
+                            Shopify Frontend Developer
+                          </h4>
+                          <span className="lightText">
+                            Alpha Rages, High Q. Tower Lahore{" "}
+                          </span>
                           <blockquote className="lightText mt-0">
-                            Design and develop custom Shopify themes to enhance user experience and drive sales.
-                            Collaborate with design and marketing teams to implement responsive and user-friendly interfaces.
-                            Utilize HTML, CSS, JavaScript, and Liquid to create and customize Shopify themes.
+                            Design and develop custom Shopify themes to enhance
+                            user experience and drive sales. Collaborate with
+                            design and marketing teams to implement responsive
+                            and user-friendly interfaces. Utilize HTML, CSS,
+                            JavaScript, and Liquid to create and customize
+                            Shopify themes.
                           </blockquote>
                         </div>
                         <div className="company">
-                          <h4 className="resume_subHeading">Frontend Internship</h4>
-                          <span className="lightText">Enigmatix PVT Ltd. Bahawalpur  </span>
+                          <h4 className="resume_subHeading">
+                            Frontend Internship
+                          </h4>
+                          <span className="lightText">
+                            Enigmatix PVT Ltd. Bahawalpur{" "}
+                          </span>
                           <blockquote className="lightText mt-0">
-                            This Internship was intended to learn frontend development. 
-                            I’ve complete grip on frontend development with mobile responsive and have practiced basics of react library.
+                            This Internship was intended to learn frontend
+                            development. I’ve complete grip on frontend
+                            development with mobile responsive and have
+                            practiced basics of react library.
                           </blockquote>
                         </div>
-                        
                       </div>
                       <hr />
                       <div className="projectRapper">
                         <h3 className="resume_mainHeading">Projects</h3>
                         <div className="project">
-                          <h4 className="project_title">Todo List App in React Js.</h4>
-                          <span className="project_subtitle lightText">Technologies:</span>
+                          <h4 className="project_title">
+                            Todo List App in React Js.
+                          </h4>
+                          <span className="project_subtitle lightText">
+                            Technologies:
+                          </span>
                           <blockquote className="project_descript lightText my-0">
                             React Js, HTML, CSS and JavaScript.
                           </blockquote>
-                          <span className="project_subtitle lightText ">Description:</span>
+                          <span className="project_subtitle lightText ">
+                            Description:
+                          </span>
                           <blockquote className="project_descript lightText mt-0">
-                            Task add, update and delete. After a task done you can move to task submit/done list. 
+                            Task add, update and delete. After a task done you
+                            can move to task submit/done list.
                           </blockquote>
                         </div>
 
                         <div className="project">
                           <h4 className="project_title">Personal Portfolio</h4>
-                          <span className="project_subtitle lightText">Technologies:</span>
+                          <span className="project_subtitle lightText">
+                            Technologies:
+                          </span>
                           <blockquote className="project_descript lightText my-0">
                             React Js, HTML, CSS and JavaScript.
                           </blockquote>
-                          <span className="project_subtitle lightText">Description:</span>
+                          <span className="project_subtitle lightText">
+                            Description:
+                          </span>
                           <blockquote className="project_descript lightText mt-0">
-                          Developed a comprehensive and visually appealing portfolio website using React.js. The site showcases my skills, projects, and expertise in web development, emphasizing my proficiency in frontend development and modern JavaScript frameworks.
+                            Developed a comprehensive and visually appealing
+                            portfolio website using React.js. The site showcases
+                            my skills, projects, and expertise in web
+                            development, emphasizing my proficiency in frontend
+                            development and modern JavaScript frameworks.
                           </blockquote>
                         </div>
 
                         <div className="project">
                           <h4 className="project_title">Motu Dev Store</h4>
-                          <span className="project_subtitle lightText">Technologies:</span>
+                          <span className="project_subtitle lightText">
+                            Technologies:
+                          </span>
                           <blockquote className="project_descript lightText my-0">
                             HTML, CSS and JavaScript.
                           </blockquote>
-                          <span className="project_subtitle lightText">Description:</span>
+                          <span className="project_subtitle lightText">
+                            Description:
+                          </span>
                           <blockquote className="project_descript lightText mt-0">
-                          Design different sections of e-commerce website. i.e. Header, Footer, Mega Menu, Product details card, contact us, cart-page.
+                            Design different sections of e-commerce website.
+                            i.e. Header, Footer, Mega Menu, Product details
+                            card, contact us, cart-page.
                           </blockquote>
                         </div>
                       </div>
@@ -230,8 +289,12 @@ function App() {
                     <div className="resumeCol1">
                       <div className="education">
                         <h3 className="resume_mainHeading">Education</h3>
-                        <h4 className="resume_subHeading">BS in Computer Science</h4>
-                        <span className="lightText">COMSATS University Islamabad</span>
+                        <h4 className="resume_subHeading">
+                          BS in Computer Science
+                        </h4>
+                        <span className="lightText">
+                          COMSATS University Islamabad
+                        </span>
                       </div>
                       <hr />
                       <div className="professionalSkills">
@@ -248,7 +311,9 @@ function App() {
                           <progress value={75} max={100}></progress>
                         </blockquote>
 
-                        <h4 className="resume_subHeading">Framework / Libraries</h4>
+                        <h4 className="resume_subHeading">
+                          Framework / Libraries
+                        </h4>
                         <blockquote className="mt-0">
                           <h5>React Js</h5>
                           <progress value={55} max={100}></progress>
@@ -260,12 +325,16 @@ function App() {
 
                         <h4 className="resume_subHeading">Tools</h4>
                         <blockquote className="mt-0">
-                        <h5 className="my-0">Git</h5>
-                        <progress  className="my-0" value={55} max={100}></progress>
-                        <h5>Figma</h5>
-                        <progress value={85} max={100}></progress>
-                        <h5>Photoshop</h5>
-                        <progress value={50} max={100}></progress>
+                          <h5 className="my-0">Git</h5>
+                          <progress
+                            className="my-0"
+                            value={55}
+                            max={100}
+                          ></progress>
+                          <h5>Figma</h5>
+                          <progress value={85} max={100}></progress>
+                          <h5>Photoshop</h5>
+                          <progress value={50} max={100}></progress>
                         </blockquote>
                       </div>
                       <hr />
@@ -281,7 +350,6 @@ function App() {
                           <h5>Graphic Design</h5>
                           <progress value={60} max={100}></progress>
                         </blockquote>
-                        
                       </div>
                     </div>
                   </div>
@@ -299,26 +367,50 @@ function App() {
                   <h2 className="portfolioTitle goldenText">My Portfolio</h2>
                   <h3>My work that I did for my clients</h3>
                   <div className="portfolio_cetagory">
-                    <a className="portfolio_cetagory-link" href="">All</a>
-                    <a className="portfolio_cetagory-link" href="">Populer</a>
-                    <a className="portfolio_cetagory-link" href="">Latest</a>
+                    <a className="portfolio_cetagory-link" href="">
+                      All
+                    </a>
+                    <a className="portfolio_cetagory-link" href="">
+                      Populer
+                    </a>
+                    <a className="portfolio_cetagory-link" href="">
+                      Latest
+                    </a>
                   </div>
                   <div className="portfolioRow">
                     <div className="portfolioCol">
                       <div className="product">
-                        <img className="object-fit product_img" src="/carRantel.jpg" alt="" />
+                        <img
+                          className="object-fit product_img"
+                          src="/carRantel.jpg"
+                          alt=""
+                        />
                         <div className="product_brief">
                           <h4>Car Rental Service</h4>
-                          <p className="my-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, et at nam facere reiciendis sequi rem aliquam deleniti porro sit distinctio, rerum minima, qui neque nesciunt a temporibus molestias similique.</p>
+                          <p className="my-0">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quas, et at nam facere reiciendis sequi rem
+                            aliquam deleniti porro sit distinctio, rerum minima,
+                            qui neque nesciunt a temporibus molestias similique.
+                          </p>
                         </div>
                       </div>
                     </div>
                     <div className="portfolioCol">
                       <div className="product">
-                        <img className="object-fit" src="/pizza-point.jpg" alt="" />
+                        <img
+                          className="object-fit"
+                          src="/pizza-point.jpg"
+                          alt=""
+                        />
                         <div className="product_brief">
                           <h4>Kashmiri Pizza</h4>
-                          <p className="my-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, et at nam facere reiciendis sequi rem aliquam deleniti porro sit distinctio, rerum minima, qui neque nesciunt a temporibus molestias similique.</p>
+                          <p className="my-0">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quas, et at nam facere reiciendis sequi rem
+                            aliquam deleniti porro sit distinctio, rerum minima,
+                            qui neque nesciunt a temporibus molestias similique.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -327,7 +419,12 @@ function App() {
                         <img className="object-fit" src="/G14.jpg" alt="" />
                         <div className="product_brief">
                           <h4>Plant Growing App</h4>
-                          <p className="my-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, et at nam facere reiciendis sequi rem aliquam deleniti porro sit distinctio, rerum minima, qui neque nesciunt a temporibus molestias similique.</p>
+                          <p className="my-0">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quas, et at nam facere reiciendis sequi rem
+                            aliquam deleniti porro sit distinctio, rerum minima,
+                            qui neque nesciunt a temporibus molestias similique.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -336,7 +433,12 @@ function App() {
                         <img className="object-fit" src="/G1.jpg" alt="" />
                         <div className="product_brief">
                           <h4>Another Planting App</h4>
-                          <p className="my-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, et at nam facere reiciendis sequi rem aliquam deleniti porro sit distinctio, rerum minima, qui neque nesciunt a temporibus molestias similique.</p>
+                          <p className="my-0">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quas, et at nam facere reiciendis sequi rem
+                            aliquam deleniti porro sit distinctio, rerum minima,
+                            qui neque nesciunt a temporibus molestias similique.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -345,7 +447,12 @@ function App() {
                         <img className="object-fit" src="/T1.jpg" alt="" />
                         <div className="product_brief">
                           <h4>Admin Dadhboard</h4>
-                          <p className="my-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, et at nam facere reiciendis sequi rem aliquam deleniti porro sit distinctio, rerum minima, qui neque nesciunt a temporibus molestias similique.</p>
+                          <p className="my-0">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quas, et at nam facere reiciendis sequi rem
+                            aliquam deleniti porro sit distinctio, rerum minima,
+                            qui neque nesciunt a temporibus molestias similique.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -354,7 +461,12 @@ function App() {
                         <img className="object-fit" src="/cards1.png" alt="" />
                         <div className="product_brief">
                           <h4>Shoes Store</h4>
-                          <p className="my-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, et at nam facere reiciendis sequi rem aliquam deleniti porro sit distinctio, rerum minima, qui neque nesciunt a temporibus molestias similique.</p>
+                          <p className="my-0">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quas, et at nam facere reiciendis sequi rem
+                            aliquam deleniti porro sit distinctio, rerum minima,
+                            qui neque nesciunt a temporibus molestias similique.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -377,12 +489,21 @@ function App() {
                       <div className="card servicesCard">
                         <div className="service-logo logo-react">
                           <div className="card-logo">
-                            <img className="object-fit" src="/react.svg" alt="" />
+                            <img
+                              className="object-fit"
+                              src="/react.svg"
+                              alt=""
+                            />
                           </div>
                         </div>
                         <div className="card-brief">
-                          <h4 className="servicesCard_title">Web Development</h4>
-                          <span>Web development is the building and maintenance of websites. it's the work that...</span>
+                          <h4 className="servicesCard_title">
+                            Web Development
+                          </h4>
+                          <span>
+                            Web development is the building and maintenance of
+                            websites. it's the work that...
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -390,12 +511,19 @@ function App() {
                       <div className="card servicesCard">
                         <div className="service-logo logo-react">
                           <div className="card-logo">
-                            <img className="object-fit" src="/uiux.png" alt="" />
+                            <img
+                              className="object-fit"
+                              src="/uiux.png"
+                              alt=""
+                            />
                           </div>
                         </div>
                         <div className="card-brief">
                           <h4 className="servicesCard_title">UI / UX Design</h4>
-                          <span>Web development is the building and maintenance of websites. it's the work that...</span>
+                          <span>
+                            Web development is the building and maintenance of
+                            websites. it's the work that...
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -403,12 +531,19 @@ function App() {
                       <div className="card servicesCard">
                         <div className="service-logo logo-react">
                           <div className="card-logo">
-                            <img className="object-fit" src="/paint.png" alt="" />
+                            <img
+                              className="object-fit"
+                              src="/paint.png"
+                              alt=""
+                            />
                           </div>
                         </div>
                         <div className="card-brief">
                           <h4 className="servicesCard_title">Graphic Design</h4>
-                          <span>Web development is the building and maintenance of websites. it's the work that...</span>
+                          <span>
+                            Web development is the building and maintenance of
+                            websites. it's the work that...
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -416,12 +551,19 @@ function App() {
                       <div className="card servicesCard">
                         <div className="service-logo logo-react">
                           <div className="card-logo">
-                            <img className="object-fit" src="/wordpress.svg" alt="" />
+                            <img
+                              className="object-fit"
+                              src="/wordpress.svg"
+                              alt=""
+                            />
                           </div>
                         </div>
                         <div className="card-brief">
                           <h4 className="servicesCard_title">CMS Design</h4>
-                          <span>Web development is the building and maintenance of websites. it's the work that...</span>
+                          <span>
+                            Web development is the building and maintenance of
+                            websites. it's the work that...
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -429,12 +571,21 @@ function App() {
                       <div className="card servicesCard">
                         <div className="service-logo logo-react">
                           <div className="card-logo">
-                            <img className="object-fit" src="/writing.png" alt="" />
+                            <img
+                              className="object-fit"
+                              src="/writing.png"
+                              alt=""
+                            />
                           </div>
                         </div>
                         <div className="card-brief">
-                          <h4 className="servicesCard_title">Content Writing</h4>
-                          <span>Web development is the building and maintenance of websites. it's the work that...</span>
+                          <h4 className="servicesCard_title">
+                            Content Writing
+                          </h4>
+                          <span>
+                            Web development is the building and maintenance of
+                            websites. it's the work that...
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -442,12 +593,19 @@ function App() {
                       <div className="card servicesCard">
                         <div className="service-logo logo-react">
                           <div className="card-logo">
-                            <img className="object-fit" src="/react.svg" alt="" />
+                            <img
+                              className="object-fit"
+                              src="/react.svg"
+                              alt=""
+                            />
                           </div>
                         </div>
                         <div className="card-brief">
                           <h4 className="servicesCard_title">Data Entry</h4>
-                          <span>Web development is the building and maintenance of websites. it's the work that...</span>
+                          <span>
+                            Web development is the building and maintenance of
+                            websites. it's the work that...
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -466,7 +624,7 @@ function App() {
                   <h2 className="feedbackTitle goldenText">Feedback</h2>
                   <h3>What People Say About Me</h3>
                   <div className="feedbackRow">
-                    <ClientSlider/>
+                    <ClientSlider />
                   </div>
                 </div>
               </div>
@@ -480,7 +638,62 @@ function App() {
                 <div className="contactMain">
                   <h2 className="contactTitle goldenText">Contact Us</h2>
                   <div className="contactRow">
-                    
+                    <div className="contactCol">
+                      <div className="contactAbout">
+                        <strong>Get in touch</strong>
+                        <h4>Let's Chat, Reach out to Us</h4>
+                        <p>
+                          Have a question or feedback? We are here to help. Send
+                          us a message, and we’ll respond within 24 hours.
+                        </p>
+                      </div>
+                      <hr />
+                      <form action="">
+                        <div className="formInput">
+                          <label htmlFor="">First Name</label>
+                          <br />
+                          <input type="text" />
+                        </div>
+                        <div className="formInput">
+                          <label htmlFor="">Last Name</label>
+                          <br />
+                          <input type="text" />
+                        </div>
+                        <div className="formInput">
+                          <label htmlFor="">Email</label>
+                          <br />
+                          <input type="email" />
+                        </div>
+                        <div className="formInput">
+                          <label htmlFor="">Message</label>
+                          <br />
+                          <input type="textarea" />
+                        </div>
+                        <div className="formInput">
+                          <input type="checkbox" />
+                          <span>
+                            I agreed to our friendly{" "}
+                            <a href="">privacy policy</a>
+                          </span>
+                        </div>
+                        <div className="contactBtn">
+                          <button>Send Message</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div className="contactCol">
+                      <div className="mapWrapper">
+                        <LoadScript googleMapsApiKey="YOUR_API_KEY">
+                          <GoogleMap
+                            mapContainerStyle={mapContainerStyle}
+                            center={center}
+                            zoom={12}
+                          >
+                            <Marker position={center} />
+                          </GoogleMap>
+                        </LoadScript>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
