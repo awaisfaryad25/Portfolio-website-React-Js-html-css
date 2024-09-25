@@ -198,14 +198,16 @@ header {
 .resume,
 .portfolio,
 .services,
-.feedback {
+.feedback,
+.contact {
   padding: 0.5rem;
 
 }
 .resumeMain,
 .portfolioMain,
 .servicesMain,
-.feedbackMain {
+.feedbackMain,
+.contactMain {
   padding-top: 1.5rem;
   text-align: center;
   background-color: var(--gray1);
@@ -259,6 +261,10 @@ progress::-webkit-progress-value {
   margin-left: auto;
   margin-right: auto;
 }
+.servicesCard_title{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .product{
   position: relative;
   overflow: hidden;
@@ -306,7 +312,8 @@ progress::-webkit-progress-value {
   background-color: var(--secondary);
 }
 .servicesTitle,
-.feedbackTitle{
+.feedbackTitle,
+.contactTitle{
   font-size: 1.3rem;
   line-height: 3rem;
 }
@@ -331,7 +338,8 @@ progress::-webkit-progress-value {
   padding-bottom: 1rem;
 }
 
-.feedbackRow{
+.feedbackRow,
+.contactRow{
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 2rem 1rem;
@@ -349,7 +357,8 @@ progress::-webkit-progress-value {
   .resume,
   .portfolio,
   .services,
-  .feedback {
+  .feedback,
+  .contact {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -474,7 +483,8 @@ progress::-webkit-progress-value {
   }
 
   .servicesTitle,
-  .feedbackTitle{
+  .feedbackTitle,
+  .contactTitle{
     font-size: 1.8rem;
     line-height: 3rem;
   }
@@ -486,7 +496,7 @@ progress::-webkit-progress-value {
     padding-right: 1.5rem;
   }
   .banner_col {
-    width: 60%;
+    max-width: 55%;
   }
   .banner_col1 {
     width: 40%;
@@ -496,7 +506,8 @@ progress::-webkit-progress-value {
   .resume, 
   .portfolio,
   .services,
-  .feedback {
+  .feedback,
+  .contact {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
   }
@@ -524,7 +535,8 @@ progress::-webkit-progress-value {
 @media (min-width: 1080px){
   .portfolioRow,
   .servicesRow,
-  .feedbackRow {
+  .feedbackRow,
+  .contactRow {
     padding-left: 3rem;
     padding-right: 3rem;
   }

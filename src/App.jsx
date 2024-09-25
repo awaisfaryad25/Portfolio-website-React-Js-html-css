@@ -381,7 +381,7 @@ function App() {
                           </div>
                         </div>
                         <div className="card-brief">
-                          <h4 className="servicesTitle">Web Development</h4>
+                          <h4 className="servicesCard_title">Web Development</h4>
                           <span>Web development is the building and maintenance of websites. it's the work that...</span>
                         </div>
                       </div>
@@ -394,7 +394,7 @@ function App() {
                           </div>
                         </div>
                         <div className="card-brief">
-                          <h4 className="servicesTitle">UI / UX Design</h4>
+                          <h4 className="servicesCard_title">UI / UX Design</h4>
                           <span>Web development is the building and maintenance of websites. it's the work that...</span>
                         </div>
                       </div>
@@ -407,7 +407,7 @@ function App() {
                           </div>
                         </div>
                         <div className="card-brief">
-                          <h4 className="servicesTitle">Graphic Design</h4>
+                          <h4 className="servicesCard_title">Graphic Design</h4>
                           <span>Web development is the building and maintenance of websites. it's the work that...</span>
                         </div>
                       </div>
@@ -420,7 +420,7 @@ function App() {
                           </div>
                         </div>
                         <div className="card-brief">
-                          <h4 className="servicesTitle">CMS Design</h4>
+                          <h4 className="servicesCard_title">CMS Design</h4>
                           <span>Web development is the building and maintenance of websites. it's the work that...</span>
                         </div>
                       </div>
@@ -433,7 +433,7 @@ function App() {
                           </div>
                         </div>
                         <div className="card-brief">
-                          <h4 className="servicesTitle">Content Writing</h4>
+                          <h4 className="servicesCard_title">Content Writing</h4>
                           <span>Web development is the building and maintenance of websites. it's the work that...</span>
                         </div>
                       </div>
@@ -446,7 +446,7 @@ function App() {
                           </div>
                         </div>
                         <div className="card-brief">
-                          <h4 className="servicesTitle">Data Entry</h4>
+                          <h4 className="servicesCard_title">Data Entry</h4>
                           <span>Web development is the building and maintenance of websites. it's the work that...</span>
                         </div>
                       </div>
@@ -467,6 +467,20 @@ function App() {
                   <h3>What People Say About Me</h3>
                   <div className="feedbackRow">
                     <ClientSlider/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div className="contactRapper">
+            <div className="container">
+              <div className="contact">
+                <div className="contactMain">
+                  <h2 className="contactTitle goldenText">Contact Us</h2>
+                  <div className="contactRow">
+                    
                   </div>
                 </div>
               </div>

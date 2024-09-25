@@ -39,7 +39,7 @@ const ClientSlider = () => {
       setCurrentSlide((prevSlide) =>
         prevSlide === clientData.length - 1 ? 0 : prevSlide + 1
       );
-    }, 4000);
+    }, 3000);
 
     return () => clearInterval(slideInterval);
   }, [clientData.length]);
