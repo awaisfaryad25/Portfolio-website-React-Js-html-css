@@ -14,8 +14,8 @@ const mapContainerStyle = {
 };
 
 const center = {
-  lat: 37.7749, // Example latitude
-  lng: -122.4194, // Example longitude
+  lat: 29.89993428613175, // latitude 
+  lng: 72.35259870019031, // longitude 
 };
 
 function App() {
@@ -683,7 +683,7 @@ function App() {
                     </div>
                     <div className="contactCol">
                       <div className="mapWrapper">
-                        <LoadScript googleMapsApiKey="YOUR_API_KEY">
+                        <LoadScript googleMapsApiKey="AIzaSyBs9rGNv2ed2_VbvC5U7SJI3bRoZnemvWA">
                           <GoogleMap
                             mapContainerStyle={mapContainerStyle}
                             center={center}
