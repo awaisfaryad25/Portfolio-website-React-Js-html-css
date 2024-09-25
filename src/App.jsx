@@ -11,6 +11,8 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 const mapContainerStyle = {
   width: "100%",
   height: "400px",
+  borderRadius: '15px', // Add border-radius here
+  overflow: 'hidden'
 };
 
 const center = {
@@ -640,7 +642,7 @@ function App() {
                   <div className="contactRow">
                     <div className="contactCol">
                       <div className="contactAbout">
-                        <strong>Get in touch</strong>
+                        <h5>Get in touch</h5>
                         <h4>Let's Chat, Reach out to Us</h4>
                         <p>
                           Have a question or feedback? We are here to help. Send
@@ -692,6 +694,35 @@ function App() {
                             <Marker position={center} />
                           </GoogleMap>
                         </LoadScript>
+                      </div>
+                      <div className="contactInfoWrapper">
+                        <div className="contactInfo">
+                          <i className="contactInfo-icn">
+                            <img src="" alt="" />
+                          </i>
+                          <div className="">
+                            <h4>Email</h4>
+                            <span>awaisfaryad25@gmail.com</span>
+                          </div>
+                        </div>
+                        <div className="contactInfo">
+                          <i className="contactInfo-icn">
+                            <img src="" alt="" />
+                          </i>
+                          <div className="">
+                            <h4>Phone Number</h4>
+                            <span>+923012525017</span>
+                          </div>
+                        </div>
+                        <div className="contactInfo">
+                          <i className="contactInfo-icn">
+                            <img src="" alt="" />
+                          </i>
+                          <div className="">
+                            <h4>Address</h4>
+                            <address>Wapda Town, Lahore</address>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

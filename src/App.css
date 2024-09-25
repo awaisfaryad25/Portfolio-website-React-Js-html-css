@@ -344,6 +344,13 @@ progress::-webkit-progress-value {
   margin-bottom: 1rem;
   padding: 2rem 1rem;
 }
+/* Contact Main  */
+.contactRow{
+  text-align: left;
+}
+.mapWrapper{
+  border-radius: 1rem;
+}
 /*  ----------------------------------------- Media Queries ---------------------------------- */
 
 @media (min-width: 540px) {
