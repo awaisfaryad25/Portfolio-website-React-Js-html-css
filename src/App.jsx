@@ -643,7 +643,7 @@ function App() {
                     <div className="contactCol contactCol-form">
                       <div className="contactAbout">
                         <h5 className="contactTouch">Get in touch</h5>
-                        <h4>Let's Chat, Reach out to Us</h4>
+                        <h4 className="contactAbout-title">Let's Chat, Reach out to Us</h4>
                         <p>
                           Have a question or feedback? We are here to help. Send
                           us a message, and we'll respond within 24 hours.

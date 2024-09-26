@@ -361,6 +361,9 @@ progress::-webkit-progress-value {
 .contactTouch{
   color: var(--secondary);
 }
+.contactAbout-title{
+  font-size: 2rem;
+}
 .contactCol-form{
   padding: 0.8rem;
   color: black;
@@ -540,6 +543,20 @@ textarea,
   .contactTitle{
     font-size: 1.8rem;
     line-height: 3rem;
+  }
+  .contactRow{
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .contactCol{
+    width: 45%;
+    
+  }
+  .contactCol-form,
+  .mapWrapper,
+  .contactInfoWrapper{
+    border-radius: 1.5rem;
   }
 }
 
