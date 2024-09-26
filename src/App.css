@@ -351,6 +351,52 @@ progress::-webkit-progress-value {
 .mapWrapper{
   border-radius: 1rem;
 }
+.contactRow,
+.contactCol-map,
+.contactInfoWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contactTouch{
+  color: var(--secondary);
+}
+.contactCol-form{
+  padding: 0.8rem;
+  color: black;
+  background-color: var(--white);
+  border-radius: 0.8rem;
+}
+textarea,
+.formInput input[type="text"],
+.formInput input[type="email"]{
+  width: 100%;
+}
+.mapWrapper,
+.contactInfoWrapper{
+  padding: 0.8rem;
+  background-color: var(--white);
+  border-radius: 0.8rem;
+}
+.contactInfo{
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  background-color: var(--secondary);
+}
+.contactSnd{
+  padding-top: 1rem;
+  padding-bottom: 0.2rem;
+}
+.contactBtn{
+  color: var(--white);
+  background-color: var(--secondary);
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+
 /*  ----------------------------------------- Media Queries ---------------------------------- */
 
 @media (min-width: 540px) {

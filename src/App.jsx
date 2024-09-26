@@ -640,17 +640,17 @@ function App() {
                 <div className="contactMain">
                   <h2 className="contactTitle goldenText">Contact Us</h2>
                   <div className="contactRow">
-                    <div className="contactCol">
+                    <div className="contactCol contactCol-form">
                       <div className="contactAbout">
-                        <h5>Get in touch</h5>
+                        <h5 className="contactTouch">Get in touch</h5>
                         <h4>Let's Chat, Reach out to Us</h4>
                         <p>
                           Have a question or feedback? We are here to help. Send
-                          us a message, and we’ll respond within 24 hours.
+                          us a message, and we'll respond within 24 hours.
                         </p>
                       </div>
                       <hr />
-                      <form action="">
+                      <form action="" className="contactForm">
                         <div className="formInput">
                           <label htmlFor="">First Name</label>
                           <br />
@@ -669,7 +669,7 @@ function App() {
                         <div className="formInput">
                           <label htmlFor="">Message</label>
                           <br />
-                          <input type="textarea" />
+                          <textarea name="" id=""></textarea>
                         </div>
                         <div className="formInput">
                           <input type="checkbox" />
@@ -678,12 +678,12 @@ function App() {
                             <a href="">privacy policy</a>
                           </span>
                         </div>
-                        <div className="contactBtn">
-                          <button>Send Message</button>
+                        <div className="contactSnd">
+                          <button className=" contactBtn">Send Message</button>
                         </div>
                       </form>
                     </div>
-                    <div className="contactCol">
+                    <div className="contactCol contactCol-map">
                       <div className="mapWrapper">
                         <LoadScript googleMapsApiKey="AIzaSyBs9rGNv2ed2_VbvC5U7SJI3bRoZnemvWA">
                           <GoogleMap
