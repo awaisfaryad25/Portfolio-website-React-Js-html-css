@@ -361,6 +361,9 @@ progress::-webkit-progress-value {
 .contactTouch{
   color: var(--secondary);
 }
+.contactAbout{
+  padding-top: 2rem;
+}
 .contactAbout-title{
   font-size: 2rem;
 }
@@ -370,10 +373,19 @@ progress::-webkit-progress-value {
   background-color: var(--white);
   border-radius: 0.8rem;
 }
+.contactForm{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
 textarea,
 .formInput input[type="text"],
 .formInput input[type="email"]{
   width: 100%;
+  padding: 0.7rem;
+}
+textarea{
+  min-height: 7rem;
 }
 .mapWrapper,
 .contactInfoWrapper{
@@ -395,7 +407,7 @@ textarea,
   color: var(--white);
   background-color: var(--secondary);
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
   border: none;
   border-radius: 0.3rem;
 }
