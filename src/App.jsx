@@ -227,6 +227,7 @@ function App() {
                         </div>
                       </div>
                       <hr />
+                      {/* Projects Section */}
                       <div className="projectRapper">
                         <h3 className="resume_mainHeading">Projects</h3>
                         <div className="project">
@@ -249,26 +250,6 @@ function App() {
                         </div>
 
                         <div className="project">
-                          <h4 className="project_title">Personal Portfolio</h4>
-                          <span className="project_subtitle lightText">
-                            Technologies:
-                          </span>
-                          <blockquote className="project_descript lightText my-0">
-                            React Js, HTML, CSS and JavaScript.
-                          </blockquote>
-                          <span className="project_subtitle lightText">
-                            Description:
-                          </span>
-                          <blockquote className="project_descript lightText mt-0">
-                            Developed a comprehensive and visually appealing
-                            portfolio website using React.js. The site showcases
-                            my skills, projects, and expertise in web
-                            development, emphasizing my proficiency in frontend
-                            development and modern JavaScript frameworks.
-                          </blockquote>
-                        </div>
-
-                        <div className="project">
                           <h4 className="project_title">Motu Dev Store</h4>
                           <span className="project_subtitle lightText">
                             Technologies:
@@ -283,6 +264,25 @@ function App() {
                             Design different sections of e-commerce website.
                             i.e. Header, Footer, Mega Menu, Product details
                             card, contact us, cart-page.
+                          </blockquote>
+                        </div>
+
+                        <div className="project">
+                          <h4 className="project_title">REJUVENATE SPA.</h4>
+                          <span className="project_subtitle lightText">
+                            Technologies:
+                          </span>
+                          <blockquote className="project_descript lightText my-0">
+                             HTML, CSS and JavaScript.
+                          </blockquote>
+                          <span className="project_subtitle lightText">
+                            Description:
+                          </span>
+                          <blockquote className="project_descript lightText mt-0">
+                          Rewrote HTML, CSS and Js to enhance structure and styling according to
+                          modern web standards. Applied a mobile-first approach to ensure optimal 
+                          performance and responsiveness across all devices. Implemented best practices 
+                          for accessibility and cross-browser compatibility.
                           </blockquote>
                         </div>
                       </div>
