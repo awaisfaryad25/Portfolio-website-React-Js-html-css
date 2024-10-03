@@ -5,6 +5,7 @@ import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/400-italic.css";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 import ClientSlider from "./Components/ClientSlider/ClientSlider";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
@@ -732,6 +733,10 @@ function App() {
           </div>
         </section>
       </main>
+      <br /><br />
+      <footer>
+        <Footer/>
+      </footer>
     </>
   );
 }
