@@ -4,8 +4,10 @@ const footer = () => {
   return(
     <div className="footer">
       <div className="footerRow">
-        <div className="footerCol"></div>
         <div className="footerCol">
+          <h3 className="goldenText">Awais Wolf</h3>
+        </div>
+        <div className="footerCol footerCol-mob">
           <strong>Download</strong>
           <ul>
             <li><a href="">Desktop App</a></li>
@@ -19,7 +21,7 @@ const footer = () => {
             <li><a href="">Content</a></li>
           </ul>
         </div>
-        <div className="footerCol">
+        <div className="footerCol footerCol-mob">
           <strong>Products</strong>
           <ul>
             <li><a href="">Web</a></li>
@@ -33,7 +35,9 @@ const footer = () => {
             <li><a href="">Terms & Conditions</a></li>
           </ul>
         </div>
-        <div className="footerCol"></div>
+        <div className="footerCol">
+          <strong>Get In Touch</strong>
+        </div>
       </div>
       <div className="footBg"></div>
     </div>

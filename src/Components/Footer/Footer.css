@@ -3,7 +3,14 @@
 }
 .footerRow{
     display: flex;
+    flex-wrap: wrap;
     padding: 4rem 2rem;
+}
+.footerCol{
+    width: 100%;
+}
+.footerCol-mob{
+    width: 50%;
 }
 .footBg {
     position: absolute;
