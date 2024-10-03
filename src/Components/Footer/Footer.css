@@ -12,6 +12,14 @@
 .footerCol-mob{
     width: 50%;
 }
+
+.footerHr{
+    width: 80%;
+}
+.footerRights{
+    text-align: center;
+    padding: 1rem 1rem;
+}
 .footBg {
     position: absolute;
     left: 0;

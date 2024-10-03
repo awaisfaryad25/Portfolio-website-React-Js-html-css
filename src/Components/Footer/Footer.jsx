@@ -39,6 +39,10 @@ const footer = () => {
           <strong>Get In Touch</strong>
         </div>
       </div>
+      <hr className="footerHr my-0"/>
+      <div className="footerRights">
+        <span>© 2024 Awais Faryad. All Rights Reserved</span>
+      </div>
       <div className="footBg"></div>
     </div>
   );
