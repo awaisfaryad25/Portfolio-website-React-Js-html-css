@@ -9,10 +9,25 @@
 .footerCol{
     width: 100%;
 }
+.footerName{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* margin-top: 1rem; */
+    margin-bottom: 2rem;
+}
+.footerAwais{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
 .footerCol-mob{
     width: 50%;
 }
-
+.footerList-link{
+    color: #fff;
+    text-decoration: none;
+}
 .footerHr{
     width: 80%;
 }

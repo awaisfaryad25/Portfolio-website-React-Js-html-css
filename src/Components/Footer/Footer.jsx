@@ -5,34 +5,38 @@ const footer = () => {
     <div className="footer">
       <div className="footerRow">
         <div className="footerCol">
-          <h3 className="goldenText">Awais Wolf</h3>
+          <div className="footerName">
+            <h3 className="goldenText footerAwais">Awais Wolf</h3>
+            <img src="./wolf.svg" alt="" />
+          </div>
         </div>
         <div className="footerCol footerCol-mob">
           <strong>Download</strong>
-          <ul>
-            <li><a href="">Desktop App</a></li>
-            <li><a href="">Mac App</a></li>
-            <li><a href="">Linux App</a></li>
+          <ul className="footerList">
+            <li className="footerList-item"><a className="footerList-link" href="">Desktop App</a></li>
+            <li className="footerList-item"><a className="footerList-link" href="">Mac App</a></li>
+            <li className="footerList-item"><a className="footerList-link" href="">Linux App</a></li>
+            <li className="footerList-item"><a className="footerList-link" href="">Other</a></li>
           </ul>
           <strong>Services</strong>
-          <ul>
-            <li><a href="">Design</a></li>
-            <li><a href="">Development</a></li>
-            <li><a href="">Content</a></li>
+          <ul className="footerList">
+            <li className="footerList-item"><a className="footerList-link" href="">Design</a></li>
+            <li className="footerList-item"><a className="footerList-link" href="">Development</a></li>
+            <li className="footerList-item"><a className="footerList-link" href="">Content</a></li>
           </ul>
         </div>
         <div className="footerCol footerCol-mob">
           <strong>Products</strong>
-          <ul>
-            <li><a href="">Web</a></li>
-            <li><a href="">App</a></li>
-            <li><a href="">Software</a></li>
-            <li><a href="">Ecommerce</a></li>
+          <ul className="footerList">
+            <li className="footerList-item"><a className="footerList-link" href="">Web</a></li>
+            <li className="footerList-item"><a className="footerList-link" href="">App</a></li>
+            <li className="footerList-item"><a className="footerList-link" href="">Software</a></li>
+            <li className="footerList-item"><a className="footerList-link" href="">Ecommerce</a></li>
           </ul>
           <strong>Company</strong>
-          <ul>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Terms & Conditions</a></li>
+          <ul className="footerList">
+            <li className="footerList-item"><a className="footerList-link" href="">Privacy Policy</a></li>
+            <li className="footerList-item"><a className="footerList-link" href="">Terms & Conditions</a></li>
           </ul>
         </div>
         <div className="footerCol">
