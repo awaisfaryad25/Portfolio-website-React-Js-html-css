@@ -41,6 +41,9 @@ const footer = () => {
         </div>
         <div className="footerCol">
           <strong>Get In Touch</strong>
+          <div className="">
+            
+          </div>
         </div>
       </div>
       <hr className="footerHr my-0"/>
