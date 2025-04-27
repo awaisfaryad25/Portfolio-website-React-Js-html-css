@@ -1,5 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "@fontsource/poppins";
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/400-italic.css";
@@ -8,6 +7,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import ClientSlider from "./Components/ClientSlider/ClientSlider";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import Resume from "./Components/resume/Resume";
 
 const mapContainerStyle = {
   width: "100%",
@@ -22,7 +22,6 @@ const center = {
 };
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -49,9 +48,7 @@ function App() {
                         Lahore, PAK.
                       </p>
                       <p className="nameShort my-0">
-                        Aspiring React Developer, 6 months of hands-on
-                        experience with HTML and CSS and 3 months of experience
-                        with JavaScript and React.js.
+                      Aspiring Software Developer with 6 months of experience developing web applications, I have contributed to several projects across industry. I thrive on tackling challenges and pushing the boundaries of web development through creativity and innovation.
                       </p>
                       <div className="social">
                         <a className="btnHire" href="#">
@@ -162,14 +159,11 @@ function App() {
                           Lahore, PAK.
                         </p>
                         <p className="my-">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Deleniti odit laborum assumenda sequi totam vel?
-                          Ea blanditiis eligendi debitis ipsum. Iure architecto
-                          reprehenderit, esse itaque ut illum sunt assumenda
-                          maiores incidunt exercitationem dolores repellendus
-                          eos nesciunt, est eum aspernatur rem optio commodi
-                          repellat praesentium alias. In possimus placeat
-                          commodi nihil!
+                        Aspiring Software Developer with 6 months of experience developing web applications, I have
+contributed to projects across industries such as Construction Management, Tourism, Solar
+Systems, Cleaning Management, Shipment Management, Custom Dashboards, CRM solutions,
+and Responsive Single-Page Applications (SPAs). I thrive on tackling challenges and pushing the
+boundaries of web development through creativity and innovation.
                         </p>
                         <div className="btnRap">
                           <a className="btn btn_cv" href="">
@@ -185,17 +179,37 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="resume">
+        <section>
+          <Resume/>
+        </section>
+
+        {/* <section id="resume">
           <div className="resumeRapper">
             <div className="container">
               <div className="resume">
                 <div className="resumeMain">
                   <h2 className="resumeTitle goldenText">My Resume</h2>
                   <div className="resumeRow">
-                    {/* Let Col */}
                     <div className="resumeCol">
                       <div className="experience">
                         <h3 className="resume_mainHeading">Experience</h3>
+                        <div className="company">
+                          <h4 className="resume_subHeading">
+                          Associate Software Developer
+                          </h4>
+                          <span className="lightText">
+                            CodeMiners IT & Consultancy ( Sep 2024 Present )
+                          </span>
+                          <blockquote className="lightText mt-0">
+                            <ul className="list-disc">
+                              <li>Collaborate with cross-functional teams to deliver high quality, user-focused solutions.</li>
+                              <li>Develop responsive and dynamic web applications using React.js, ensuring seamless user experiences across devices.</li>
+                              <li>Integrate RESTful APIs for efficient data handling and backend communication</li>
+                              <li>Utilize Redux for state management to create scalable and maintainable applications.</li>
+                              <li>Implement payment gateway integrations to enable secure and reliable transactions.</li>
+                            </ul>
+                          </blockquote>
+                        </div>
                         <div className="company">
                           <h4 className="resume_subHeading">
                             Shopify Frontend Developer
@@ -212,83 +226,51 @@ function App() {
                             Shopify themes.
                           </blockquote>
                         </div>
-                        <div className="company">
-                          <h4 className="resume_subHeading">
-                            Frontend Internship
-                          </h4>
-                          <span className="lightText">
-                            Enigmatix PVT Ltd. Bahawalpur{" "}
-                          </span>
-                          <blockquote className="lightText mt-0">
-                            This Internship was intended to learn frontend
-                            development. I’ve complete grip on frontend
-                            development with mobile responsive and have
-                            practiced basics of react library.
-                          </blockquote>
-                        </div>
+                        
                       </div>
                       <hr />
-                      {/* Projects Section */}
                       <div className="projectRapper">
                         <h3 className="resume_mainHeading">Projects</h3>
                         <div className="project">
                           <h4 className="project_title">
-                            Todo List App in React Js.
+                          Helper log Super Admin Panel.
                           </h4>
-                          <span className="project_subtitle lightText">
-                            Technologies:
-                          </span>
                           <blockquote className="project_descript lightText my-0">
-                            React Js, HTML, CSS and JavaScript.
+                            Technologies: React, Tailwind, JSX, Redux, REST APIs.
                           </blockquote>
-                          <span className="project_subtitle lightText ">
-                            Description:
-                          </span>
                           <blockquote className="project_descript lightText mt-0">
-                            Task add, update and delete. After a task done you
-                            can move to task submit/done list.
+                            Contributed significantly to the development of a comprehensive shipment
+                            management dashboard aimed at streamlining parcel and shipment workflows. Key
+                            responsibilities included.
+                            <ul className="list-disc">
+                              <li>Implemented Manifest Management to add, track, and view shipment manifests withsecure document handling</li>
+                              <li>Developed functionality for creating and managing Purchase Orders (POs), Invoices, and detailed Invoice Items linked to manifests</li>
+                              <li>Built modules for Agent Management (middlemen) and Runner Management (delivery personnel), enabling seamless addition, viewing, and deletion of records</li>
+                              <li>Ensured a secure and user-friendly interface for Super Admin Login and Signup functionalitie</li>
+                            </ul>	
                           </blockquote>
                         </div>
-
                         <div className="project">
-                          <h4 className="project_title">Motu Dev Store</h4>
-                          <span className="project_subtitle lightText">
-                            Technologies:
-                          </span>
+                          <h4 className="project_title">GhoomoPhiroo Pakistan Tourist Web App</h4>
                           <blockquote className="project_descript lightText my-0">
-                            HTML, CSS and JavaScript.
+                            Technologies: React, Tailwind, JSX, Redux, REST APIs, Payment gateway.
                           </blockquote>
-                          <span className="project_subtitle lightText">
-                            Description:
-                          </span>
                           <blockquote className="project_descript lightText mt-0">
-                            Design different sections of e-commerce website.
-                            i.e. Header, Footer, Mega Menu, Product details
-                            card, contact us, cart-page.
-                          </blockquote>
-                        </div>
-
-                        <div className="project">
-                          <h4 className="project_title">REJUVENATE SPA.</h4>
-                          <span className="project_subtitle lightText">
-                            Technologies:
-                          </span>
-                          <blockquote className="project_descript lightText my-0">
-                             HTML, CSS and JavaScript.
-                          </blockquote>
-                          <span className="project_subtitle lightText">
-                            Description:
-                          </span>
-                          <blockquote className="project_descript lightText mt-0">
-                          Rewrote HTML, CSS and Js to enhance structure and styling according to
-                          modern web standards. Applied a mobile-first approach to ensure optimal 
-                          performance and responsiveness across all devices. Implemented best practices 
-                          for accessibility and cross-browser compatibility.
+                            Developed an engaging and user-friendly tourist web application for exploring and
+                            booking travel experiences across Pakistan. Key contributions include	
+                            <ul className="list-disc">
+                              <li>Tours and Hotels: Showcased a wide range of tours and hotels with interactive listing and detailed exploration pages</li>
+                              <li>Trip Bookings and Tickets: Implemented seamless trip booking functionality, including ticket generation and management</li>
+                              <li>Lucky Draw: Developed a lottery based trip selection system, enabling users to win trips and ensuring efficient lucky draw management</li>
+                              <li>Destination Management: Built modules to display, manage, and organize popular destinations, reviews, and events, along with their detailed pages</li>
+                              <li>Content Pages: Designed About Us, Contact Us, and Privacy Policy pages to provide essential information to users</li>
+                              <li>Admin Panel: Created a robust admin dashboard to update, manage, and maintain all app data, including tours, hotels, destinations, and user-generated content.</li>
+                              <li>This project focused on creating an immersive experience for users while ensuring seamless backend data management for administrators.</li>
+                            </ul>
                           </blockquote>
                         </div>
                       </div>
                     </div>
-                    {/* Right Col */}
                     <div className="resumeCol1">
                       <div className="education">
                         <h3 className="resume_mainHeading">Education</h3>
@@ -302,8 +284,8 @@ function App() {
                       <hr />
                       <div className="professionalSkills">
                         <h3 className="resume_mainHeading">SKILLS</h3>
-                        <h4 className="resume_subHeading">Languages</h4>
-                        <blockquote className="mt-0">
+                        <h4 className="resume_subHeading mt-2">Languages</h4>
+                        <blockquote className="mt-2">
                           <h5>HTML5</h5>
                           <progress value={85} max={100}></progress>
                           <h5>CSS</h5>
@@ -314,20 +296,26 @@ function App() {
                           <progress value={75} max={100}></progress>
                         </blockquote>
 
-                        <h4 className="resume_subHeading">
+                        <h4 className="resume_subHeading mt-4">
                           Framework / Libraries
                         </h4>
-                        <blockquote className="mt-0">
+                        <blockquote className="mt-2">
                           <h5>React Js</h5>
                           <progress value={55} max={100}></progress>
                           <h5>Tailwind</h5>
                           <progress value={85} max={100}></progress>
                           <h5>Material Ui</h5>
                           <progress value={65} max={100}></progress>
+                          <h5>Axios</h5>
+                          <progress value={75} max={100}></progress>
+                          <h5>Redux</h5>
+                          <progress value={55} max={100}></progress>
+                          <h5>Socket.io</h5>
+                          <progress value={65} max={100}></progress>
                         </blockquote>
 
-                        <h4 className="resume_subHeading">Tools</h4>
-                        <blockquote className="mt-0">
+                        <h4 className="resume_subHeading mt-4">Tools</h4>
+                        <blockquote className="mt-2">
                           <h5 className="my-0">Git</h5>
                           <progress
                             className="my-0"
@@ -340,7 +328,7 @@ function App() {
                           <progress value={50} max={100}></progress>
                         </blockquote>
                       </div>
-                      <hr />
+                      <hr className="my-4" />
                       <div className="otherSkills">
                         <h3 className="resume_mainHeading">Other Skills</h3>
                         <blockquote>
@@ -360,7 +348,8 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+
         {/* Portfolio */}
         <section id="portfolio">
           <div className="portfolioRapper">

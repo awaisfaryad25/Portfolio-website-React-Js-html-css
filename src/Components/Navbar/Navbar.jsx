@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+// import CV from '../../assets/myDocs/AwaisFaryad.docx'
 
 const Navbar = () => {
 
@@ -43,7 +44,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navRight">
-            <a className="btn btn_CV" href="">
+            <a className="btn btn_CV" href="/myDocs/AwaisFaryad.docx" download="AwaisFaryad.docx">
               Download CV
             </a>
           </div>

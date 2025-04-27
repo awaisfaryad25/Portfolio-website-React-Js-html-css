@@ -1,0 +1,48 @@
+import Experience from './Experience';
+import Projects from './Projects';
+import Skills from './Skills';
+
+const Resume = () => {
+  return (
+    <div className="max-w-[85%] mx-auto p-4 md:px-12 font-sans space-y-4 md:space-y-8 bg-[var(--gray1)] rounded-2xl">
+      <section className="text-center mb-8">
+        <h2 className="text-xl font-bold text-[var(--primary)] mb-8">My Resume</h2>
+        <h1 className="text-4xl font-bold mb-2" >M. Awais Faryad</h1>
+        <p className="text-lg md:text-xl">React.js Developer</p>
+        <div className="mt-4 space-x- grid grid-cols-1 md:grid-cols-3 items-center justify-center ">
+          <p>Email: <a href="mailto:awaisfaryad25@gmail.com" className="">awaisfaryad25@gmail.com</a></p>
+          <p>Phone: <a href="tel:03012525017" className="0">03012525017</a></p>
+          <p>Location: Wapda Town, Lahore</p>
+          <p>Website: <a href="https://awaisfaryad.vercel.app" target="_blank" rel="noopener noreferrer" className="">awaisfaryad.vercel.app</a></p>
+        </div>
+      </section>
+      <section className="">
+        <h2 className="text-2xl font-semibold mb-2">Profile</h2>
+        <hr className='mb-3'/>
+        <p>
+          Resourceful professional with successful track record in developing innovative web designs and features.
+          Possesses solid knowledge of Front-end Technologies like React.js and Next.js with ability to quickly learn new technologies.
+          Demonstrated success in identifying and resolving complex code issues.
+        </p>
+      </section>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-2">Education</h2>
+        <hr className='mb-3'/>
+        <div className="flex items-center justify-between gap-8">
+          <h3 className='text-xl font-semibold mb-2'>COMSATS University Islamabad</h3>
+          <p>2018 – 2022</p>
+        </div>
+        <p className='text-lg'>BS in Computer Science</p>
+      </section>
+      
+      <section className=" space-y-6">
+        <Skills/>
+        <Experience/>
+        <Projects/>
+      </section>
+
+    </div>
+  );
+};
+
+export default Resume;
