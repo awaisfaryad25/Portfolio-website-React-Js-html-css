@@ -8,6 +8,7 @@ import Footer from "./Components/Footer/Footer";
 import ClientSlider from "./Components/ClientSlider/ClientSlider";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import Resume from "./Components/resume/Resume";
+import About from "./Components/about/About";
 
 const mapContainerStyle = {
   width: "100%",
@@ -117,6 +118,7 @@ function App() {
             <div className="backBanner"></div>
           </div>
         </section>
+        <About/>
         <section id="about">
           <div className="aboutRapper">
             <div className="container">
