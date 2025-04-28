@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-// import CV from '../../assets/myDocs/AwaisFaryad.docx'
-
+import Button from "../global/Button";
 const Navbar = () => {
 
   const [isActive, setIsActive] = useState(false);
@@ -44,9 +43,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navRight">
-            <a className="btn btn_CV" href="/myDocs/AwaisFaryad.docx" download="AwaisFaryad.docx">
-              Download CV
-            </a>
+            <Button title="Download CV" downloadLink="/documents/Awais-Faryad.pdf" />
           </div>
           <div className="menu">
             <button className="btn_menu nav__toggle" href="#" onClick={toggleMenu}>

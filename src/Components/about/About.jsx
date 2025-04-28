@@ -6,9 +6,9 @@ const About = () => {
   return (
     <>
       <div className="max-w-[85%] mx-auto p-4 md:px-12 font-sans space-y-4 md:space-y-8 bg-[var(--gray1)] rounded-2xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-6 md:py-12">
           <div className="">
-            <div className="size-80 mx-auto">
+            <div className="w-ful max-w-60 md:max-w-80 mx-auto">
               <img src={profile} alt="" className='size-full object-cover '/>
             </div>
           </div>
@@ -26,8 +26,7 @@ const About = () => {
               I thrive on tackling challenges and pushing the boundaries of web development 
               through creativity and innovation.
             </p>
-            
-            <Button title="Download CV" />
+            <Button title="Download CV" downloadLink="/documents/Awais-Faryad.pdf" />
           </div>
         </div>
       </div>

@@ -5,11 +5,11 @@ const Experience = () => {
       <h2 className="text-2xl font-semibold mb-2">Professional Experience</h2>
         <hr className='mb-3'/>
         <div className="mb-4">
-          <div className="flex items-center justify-between gap-8">
+          <div className="flex flex-col md:flex-row md:items-center justify-between md:gap-8">
             <h3 className='text-xl font-semibold mb-1'>Associate Software Developer</h3>
             <p>Sep-2024 – present</p>
           </div>
-          <div className="flex items-center justify-between gap-8">
+          <div className="flex flex-col md:flex-row md:items-center justify-between md:gap-8">
             <h3 className=' font-medium mb-2'>CodeMiners IT & Consultancy</h3>
             <p>Lahore, Pakistan</p>
           </div>
@@ -20,12 +20,12 @@ const Experience = () => {
           </ul>
         </div>
         <div>
-          <div className="flex items-center justify-between gap-8">
+          <div className="flex flex-col md:flex-row md:items-center justify-between md:gap-8">
             <h3 className='text-xl font-semibold mb-1'>Frontend Developer Intern</h3>
             <p>11/2023 - 04/2024</p>
           </div>
-          <div className="flex items-center justify-between gap-8">
-            <h3 className=' font-medium mb-2'>Alpha Rages</h3>
+          <div className="flex  flex-row items-center justify-between gap-8">
+            <h3 className=' font-medium md:mb-2'>Alpha Rages</h3>
             <p>Lahore, Pakistan</p>
           </div>
           <ul className="list-disc list-inside">
