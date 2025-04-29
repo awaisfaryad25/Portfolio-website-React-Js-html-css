@@ -1,3 +1,4 @@
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt , FaGlobe   } from "react-icons/fa";
 import Experience from './Experience';
 import Projects from './Projects';
 import Skills from './Skills';
@@ -9,11 +10,20 @@ const Resume = () => {
         <h2 className="text-xl font-bold text-[var(--primary)] mb-3 md:mb-8">My Resume</h2>
         <h1 className="text-2xl md:text-4xl font-bold mb-2" >M. Awais Faryad</h1>
         <p className="text-lg md:text-xl">React.js Developer</p>
-        <div className="mt-4 space-x- grid grid-cols-1 md:grid-cols-3 items-center justify-center ">
-          <p>Email: <a href="mailto:awaisfaryad25@gmail.com" className="">awaisfaryad25@gmail.com</a></p>
-          <p>Phone: <a href="tel:03012525017" className="0">03012525017</a></p>
-          <p>Location: Wapda Town, Lahore</p>
-          <p>Website: <a href="https://awaisfaryad.vercel.app" target="_blank" rel="noopener noreferrer" className="">awaisfaryad.vercel.app</a></p>
+        <div className="mt-4 space-x- flex flex-col md:flex-row md:flex-wrap gap-4 items-center justify-center ">
+          <p className="flex items-center gap-2">
+            <FaEnvelope/> 
+            <a href="mailto:awaisfaryad25@gmail.com" className="">awaisfaryad25@gmail.com</a>
+          </p>
+          <p className="flex items-center gap-2">
+            <FaPhoneAlt/> 
+            <a href="tel:03012525017" className="0">03012525017</a>
+          </p>
+          <p className="flex items-center gap-2">  <FaMapMarkerAlt /> Wapda Town, Lahore</p>
+          <p className="flex items-center gap-2">
+            <FaGlobe/> 
+            <a href="https://awaisfaryad.vercel.app" target="_blank">awaisfaryad.vercel.app</a>
+          </p>
         </div>
       </section>
       <section className="">
