@@ -1,3 +1,10 @@
+import { FaProjectDiagram } from 'react-icons/fa';
+import { BsFillFolderFill } from 'react-icons/bs';
+import { MdOutlineWork } from 'react-icons/md';
+import { AiFillFolderOpen } from 'react-icons/ai';
+import { VscFolderActive } from 'react-icons/vsc';
+import { GoProject } from 'react-icons/go';
+
 
 const Projects = () => {
   return (
