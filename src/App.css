@@ -1,15 +1,15 @@
 #root {
   --primary: #f5bd02;
   --secondary: #ff451b;
-  --gray1: #494b50;
-  --gray2: #a7afbd;
-  --gray3: #5c5d64;
+  --gray1: #1d1d1e;
+  /* --gray2: #a7afbd; */
+  /* --gray3: #5c5d64; */
   --white: #fff;
 
   color: var(--white);
 }
 body {
-  background-color: #212121;
+  background-color: #121212;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
