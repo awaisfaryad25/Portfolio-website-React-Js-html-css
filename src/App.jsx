@@ -9,6 +9,7 @@ import ClientSlider from "./Components/ClientSlider/ClientSlider";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import Resume from "./Components/resume/Resume";
 import About from "./Components/about/About";
+import Services from "./Components/services/Services";
 
 const mapContainerStyle = {
   width: "100%",
@@ -121,6 +122,7 @@ function App() {
         <section className="space-y-8 mt-12">
           <About/>
           <Resume/>
+          <Services/>
         </section>
 
         {/* Portfolio */}
@@ -232,145 +234,6 @@ function App() {
                             aliquam deleniti porro sit distinctio, rerum minima,
                             qui neque nesciunt a temporibus molestias similique.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* Services */}
-        <section id="services">
-          <div className="servicesRapper">
-            <div className="container">
-              <div className="services">
-                <div className="servicesMain">
-                  <h2 className="servicesTitle goldenText">Services</h2>
-                  <h3>Never compromise with quality</h3>
-                  <div className="servicesRow">
-                    <div className="servicesCol">
-                      <div className="card servicesCard">
-                        <div className="service-logo logo-react">
-                          <div className="card-logo">
-                            <img
-                              className="object-fit"
-                              src="/react.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div className="card-brief">
-                          <h4 className="servicesCard_title">
-                            Web Development
-                          </h4>
-                          <span>
-                            Web development is the building and maintenance of
-                            websites. it's the work that...
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="servicesCol">
-                      <div className="card servicesCard">
-                        <div className="service-logo logo-react">
-                          <div className="card-logo">
-                            <img
-                              className="object-fit"
-                              src="/uiux.png"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div className="card-brief">
-                          <h4 className="servicesCard_title">UI / UX Design</h4>
-                          <span>
-                            Web development is the building and maintenance of
-                            websites. it's the work that...
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="servicesCol">
-                      <div className="card servicesCard">
-                        <div className="service-logo logo-react">
-                          <div className="card-logo">
-                            <img
-                              className="object-fit"
-                              src="/paint.png"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div className="card-brief">
-                          <h4 className="servicesCard_title">Graphic Design</h4>
-                          <span>
-                            Web development is the building and maintenance of
-                            websites. it's the work that...
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="servicesCol">
-                      <div className="card servicesCard">
-                        <div className="service-logo logo-react">
-                          <div className="card-logo">
-                            <img
-                              className="object-fit"
-                              src="/wordpress.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div className="card-brief">
-                          <h4 className="servicesCard_title">CMS Design</h4>
-                          <span>
-                            Web development is the building and maintenance of
-                            websites. it's the work that...
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="servicesCol">
-                      <div className="card servicesCard">
-                        <div className="service-logo logo-react">
-                          <div className="card-logo">
-                            <img
-                              className="object-fit"
-                              src="/writing.png"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div className="card-brief">
-                          <h4 className="servicesCard_title">
-                            Content Writing
-                          </h4>
-                          <span>
-                            Web development is the building and maintenance of
-                            websites. it's the work that...
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="servicesCol">
-                      <div className="card servicesCard">
-                        <div className="service-logo logo-react">
-                          <div className="card-logo">
-                            <img
-                              className="object-fit"
-                              src="/react.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div className="card-brief">
-                          <h4 className="servicesCard_title">Data Entry</h4>
-                          <span>
-                            Web development is the building and maintenance of
-                            websites. it's the work that...
-                          </span>
                         </div>
                       </div>
                     </div>
