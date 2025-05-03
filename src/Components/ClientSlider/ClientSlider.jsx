@@ -49,28 +49,28 @@ const ClientSlider = () => {
   };
 
   return (
-    <div className="feedbackSlider">
+    <div className="relative w-full overflow-hidden">
       <div
-        className="sliderWrapper"
+        className="sliderWrapper flex w-full transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {clientData.map((feedback) => (
-          <div className="slide" key={feedback.id}>
-            <div className="sliderRapper">
-              <div className="slider_col colLeft">
-                <div className="slider_img">
-                  <img className="object-fit" src={feedback.image} alt="" />
+          <div className="flex min-w-full" key={feedback.id}>
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 md:w-[70%] lg:w-[55%] mx-auto">
+              <div className="bg-[var(--secondary)] w-full md:col-span-2 lg:col-span-3 colLeft pt-4 md:pt-8 rounded-t-lg md:rounded-l-lg md:rounded-r-none">
+                <div className="slider_img h-[260px] md:size-[260px] m-auto box-content">
+                  <img className="object-cover size-full" style={{ borderRadius: "0.5rem 3rem" }} src={feedback.image} alt="" />
                 </div>
-                <div className="slider_title">
-                  <h4 className="my">{feedback.name}</h4>
+                <div className=" p-4 md:p-8">
+                  <h4 className="text-lg font-bold">{feedback.name}</h4>
                   <span>{feedback.role}</span>
                 </div>
               </div>
-              <div className="sliderCol colRight bg-[#22224]">
+              <div className="sliderCol w-full lg:col-span-2 p-4 md:p-8 bg-[var(--gray3)] bg-[#222224] text-start rounded-b-lg md:rounded-r-lg md:rounded-l-none">
                 <div className="slider_content">
                   <p>{feedback.comment}</p>
                 </div>
-                <div className="quote">
+                <div className="quote flex justify-end">
                   <img src="./qoutes.svg" alt="quote icon" />
                 </div>
               </div>

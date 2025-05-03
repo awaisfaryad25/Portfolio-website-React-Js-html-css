@@ -2,81 +2,17 @@
   box-sizing: border-box;
 }
 #root {
-  --primary: #f5bd02;
-  --secondary: #ff451b;
-  --gray1: #494b50;
-  --gray2: #a7afbd;
-  --gray3: #5c5d64;
+  /* --primary: #f5bd02; */
+  /* --secondary: #ff451b; */
+  /* --gray1: #494b50; */
+  /* --gray2: #a7afbd; */
+  --gray3: #222224;
   --white: #fff;
 
   color: var(--white);
 }
-.my{
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.slider {
-  /* border-radius: 1rem; */
-}
-.object-fit {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.feedbackSlider {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.slide {
-  min-width: 100%;
-  display: flex;
-}
-.sliderWrapper {
-  display: flex;
-  width: 100%;
-  transition: transform 0.5s ease-in-out;
-  /* The sliding animation duration */
-}
-.slider_col {
-  padding: 1rem;
-  width: 100%;
-}
 
-.colLeft {
-  background-color: var(--secondary);
-  border-radius: 0.5rem 0.5rem 0 0;
-}
-.colRight {
-  background-color: var(--gray3);
-  border-radius: 0 0 0.5rem 0.5rem;
-  padding: 2rem;
-  text-align: start;
-}
 
-.slider_img img {
-  /* width: 250px; */
-  height: 260px;
-  border-radius: 0.5rem 3rem;
-  object-fit: cover;
-}
-
-.slider_title {
-  padding: 1rem 0.5rem;
-}
-.slider_title h4 {
-  font-size: 1.4rem;
-  line-height: 2rem;
-}
-.slider_title span {
-  font-size: 1.1rem;
-  line-height: 2rem;
-  font-weight: 500;
-}
-.quote{
-  display: flex;
-  justify-content: end;
-}
 
 .dots {
   display: flex;
@@ -88,7 +24,7 @@
   height: 3px;
   width: 20px;
   margin: 0 3px;
-  background-color: var(--gray2);
+  background-color: var(--gray3);
   display: inline-block;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -99,38 +35,6 @@
   background-color: var(--secondary);
 }
 
-@media (min-width: 680px) {
-  .sliderRapper {
-    display: flex;
-    margin: auto;
-  }
-  .colLeft {
-    width: 55%;
-    border-radius: 0.5rem 0 0 0.5rem;
-  }
-  .colRight {
-    width: 45%;
-    border-radius: 0 0.5rem 0.5rem 0;
-  }
-  .slider_img {
-    width: 260px;
-    height: 260px;
-    margin: auto;
-    box-sizing: content-box;
-  }
-}
-@media (min-width: 767px){}
-@media (min-width: 992px){
-  .sliderRapper {
-    width: 70%;
-  }
-  .slider_col {
-    padding-top: 1.5rem;
-  }
-}
-@media (min-width: 1200px){
-  .sliderRapper {
-    width: 55%;
-  }
-}
+
+
 
