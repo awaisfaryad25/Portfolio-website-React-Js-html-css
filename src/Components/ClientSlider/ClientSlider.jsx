@@ -66,7 +66,7 @@ const ClientSlider = () => {
                   <span>{feedback.role}</span>
                 </div>
               </div>
-              <div className="sliderCol colRight">
+              <div className="sliderCol colRight bg-[#22224]">
                 <div className="slider_content">
                   <p>{feedback.comment}</p>
                 </div>

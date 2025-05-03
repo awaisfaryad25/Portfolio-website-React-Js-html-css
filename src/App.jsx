@@ -10,6 +10,8 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import Resume from "./Components/resume/Resume";
 import About from "./Components/about/About";
 import Services from "./Components/services/Services";
+import Feedback from "./Components/feedback/Feedback";
+import Portfolio from "./Components/portfolio/Portfolio";
 
 const mapContainerStyle = {
   width: "100%",
@@ -122,7 +124,9 @@ function App() {
         <section className="space-y-8 mt-12">
           <About/>
           <Resume/>
+          <Portfolio/>
           <Services/>
+          <Feedback/>
         </section>
 
         {/* Portfolio */}
@@ -237,22 +241,6 @@ function App() {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* feedback */}
-        <section id="feedback">
-          <div className="feedbackRapper">
-            <div className="container">
-              <div className="feedback">
-                <div className="feedbackMain">
-                  <h2 className="feedbackTitle goldenText">Feedback</h2>
-                  <h3>What People Say About Me</h3>
-                  <div className="feedbackRow">
-                    <ClientSlider />
                   </div>
                 </div>
               </div>
