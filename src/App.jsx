@@ -12,6 +12,7 @@ import About from "./Components/about/About";
 import Services from "./Components/services/Services";
 import Feedback from "./Components/feedback/Feedback";
 import Portfolio from "./Components/portfolio/Portfolio";
+import Contact from "./Components/contact/Contact";
 
 const mapContainerStyle = {
   width: "100%",
@@ -127,10 +128,11 @@ function App() {
           <Portfolio/>
           <Services/>
           <Feedback/>
+          <Contact/>
         </section>
 
         {/* Portfolio */}
-        <section id="portfolio">
+        {/* <section id="portfolio">
           <div className="portfolioRapper">
             <div className="container">
               <div className="portfolio">
@@ -246,105 +248,8 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
-        <section id="contact">
-          <div className="contactRapper">
-            <div className="container">
-              <div className="contact">
-                <div className="contactMain">
-                  <h2 className="contactTitle goldenText">Contact Us</h2>
-                  <div className="contactRow">
-                    <div className="contactCol contactCol-form">
-                      <div className="contactAbout">
-                        <h5 className="contactTouch">Get in touch</h5>
-                        <h4 className="contactAbout-title">Let's Chat, Reach out to Us</h4>
-                        <p>
-                          Have a question or feedback? We are here to help. Send
-                          us a message, and we'll respond within 24 hours.
-                        </p>
-                      </div>
-                      <hr />
-                      <form action="" className="contactForm">
-                        <div className="formInput">
-                          <label htmlFor="">First Name</label>
-                          <br />
-                          <input type="text" />
-                        </div>
-                        <div className="formInput">
-                          <label htmlFor="">Last Name</label>
-                          <br />
-                          <input type="text" />
-                        </div>
-                        <div className="formInput">
-                          <label htmlFor="">Email</label>
-                          <br />
-                          <input type="email" />
-                        </div>
-                        <div className="formInput">
-                          <label htmlFor="">Message</label>
-                          <br />
-                          <textarea name="" id=""></textarea>
-                        </div>
-                        <div className="formInput">
-                          <input type="checkbox" />
-                          <span>
-                            I agreed to our friendly{" "}
-                            <a href="">privacy policy</a>
-                          </span>
-                        </div>
-                        <div className="contactSnd">
-                          <button className=" contactBtn">Send Message</button>
-                        </div>
-                      </form>
-                    </div>
-                    <div className="contactCol contactCol-map">
-                      <div className="mapWrapper">
-                        <LoadScript googleMapsApiKey="AIzaSyBs9rGNv2ed2_VbvC5U7SJI3bRoZnemvWA">
-                          <GoogleMap
-                            mapContainerStyle={mapContainerStyle}
-                            center={center}
-                            zoom={12}
-                          >
-                            <Marker position={center} />
-                          </GoogleMap>
-                        </LoadScript>
-                      </div>
-                      <div className="contactInfoWrapper">
-                        <div className="contactInfo">
-                          <i className="contactInfo-icn">
-                            <img src="" alt="" />
-                          </i>
-                          <div className="">
-                            <h4>Email</h4>
-                            <span>awaisfaryad25@gmail.com</span>
-                          </div>
-                        </div>
-                        <div className="contactInfo">
-                          <i className="contactInfo-icn">
-                            <img src="" alt="" />
-                          </i>
-                          <div className="">
-                            <h4>Phone Number</h4>
-                            <span>+923012525017</span>
-                          </div>
-                        </div>
-                        <div className="contactInfo">
-                          <i className="contactInfo-icn">
-                            <img src="" alt="" />
-                          </i>
-                          <div className="">
-                            <h4>Address</h4>
-                            <address>Wapda Town, Lahore</address>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        </section> */}
+
       </main>
       <br /><br />
       <footer>
