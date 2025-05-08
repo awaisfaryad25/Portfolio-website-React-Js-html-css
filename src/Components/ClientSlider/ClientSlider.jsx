@@ -44,7 +44,7 @@ const ClientSlider = () => {
         {clientData.map((feedback) => (
           <div className="flex min-w-full" key={feedback.id}>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 md:w-[70%] lg:w-[55%] mx-auto">
-              <div className="bg-[var(--secondary)] w-full md:col-span-2 lg:col-span-3 colLeft pt-4 md:pt-8 rounded-t-lg md:rounded-l-lg md:rounded-r-none">
+              <div className="bg-[var(--secondary)] w-full md:col-span-2 lg:col-span-3 colLeft p-4 md:p-8 rounded-t-lg md:rounded-l-lg md:rounded-r-none">
                 <div className="h-[260px] md:size-[260px] m-auto box-content">
                   <img className="object-cover size-full" style={{ borderRadius: "0.5rem 3rem" }} src={feedback.image} alt="" />
                 </div>

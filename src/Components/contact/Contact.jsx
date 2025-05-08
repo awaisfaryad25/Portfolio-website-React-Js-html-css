@@ -1,19 +1,8 @@
 import React, { useState } from 'react';
 import InputField from '../global/InputField';
 import Button from '../global/Button';
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import Map from '../global/Map';
 
-const mapContainerStyle = {
-  width: "100%",
-  height: "400px",
-  borderRadius: '15px', // Add border-radius here
-  overflow: 'hidden'
-};
-
-const center = {
-  lat: 29.89993428613175, // latitude 
-  lng: 72.35259870019031, // longitude 
-};
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -42,38 +31,23 @@ const Contact = () => {
           </div>
           <form className="space-y-4">
             <InputField
-              label="First Name"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
-              placeholder="Enter your first name"
+              label="First Name" name="firstName" value={formData.firstName}
+              placeholder="Enter your first name" onChange={handleChange}
             />
             <InputField
-              label="Email"
-              name="email"
-              type="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Enter your email"
+              label="Email" name="email" type="email" value={formData.email} 
+              placeholder="Enter your email" onChange={handleChange}
             />
             <InputField
-              label="Message"
-              name="message"
-              type="text"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Your message..."
+              label="Message" name="message" value={formData.message}
+              placeholder="Your message..." onChange={handleChange} isTextArea={true}
             />
             <Button title="Send Message"  />
           </form>
         </div>
         <div className="bg-[#222224] p-4 md:p-8 space-y-6 rounded-2xl">
           <div className="bg-[#2c2c2e] p-4 rounded-3xl">
-            <LoadScript googleMapsApiKey="AIzaSyBs9rGNv2ed2_VbvC5U7SJI3bRoZnemvWA">
-              <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={12}>
-                <Marker position={center} />
-              </GoogleMap>
-            </LoadScript>
+            <Map />
           </div>
           <div className="bg-[#2c2c2e] p-4 rounded-3xl space-y-4">
             <div className="py-3 px-6 rounded-2xl space-y-2 bg-[var(--secondary)]">
