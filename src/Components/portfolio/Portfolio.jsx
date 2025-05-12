@@ -1,4 +1,4 @@
-import GPP from '../../assets/projects/GPP.png'
+import GPP from '../../assets/projects/gpp.png'  
 import Helperlog from '../../assets/projects/helperlog.png'
 
 const Portfolio = () => {

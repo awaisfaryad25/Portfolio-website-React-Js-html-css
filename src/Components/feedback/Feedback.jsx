@@ -1,4 +1,4 @@
-import ClientSlider from "../ClientSlider/ClientSlider"
+import ClientSlider from "./ClientSlider"
 
 const Feedback = () => {
   return (

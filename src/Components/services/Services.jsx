@@ -1,4 +1,7 @@
-import React from 'react'
+import web from '../../assets/services/web.svg'
+import dev from '../../assets/services/dev.svg'
+import uiux from '../../assets/services/uiux.svg'
+import app from '../../assets/services/app.svg'
 
 const Services = () => {
   return (
@@ -11,7 +14,7 @@ const Services = () => {
         <div className="bg-[#222224] p-4 md:p-8 space-y-6 rounded-2xl">
           <div className="flex items-start gap-6">
             <div className="size-20 ">
-              <img src="/services/web.svg" alt="" className="size-full object-contain"/>
+              <img src={web} alt="" className="size-full object-contain"/>
             </div>
             <div className="  space-y-3 mt-2">
               <h4 className="text-lg md:text-xl font-bold">Web Design</h4>
@@ -22,7 +25,7 @@ const Services = () => {
         <div className="bg-[#222224] p-4 md:p-8 space-y-6 rounded-2xl">
           <div className="flex items-start gap-6">
             <div className="size-20 ">
-              <img src="/services/dev.svg" alt="" className="size-full object-contain"/>
+              <img src={dev} alt="" className="size-full object-contain"/>
             </div>
             <div className="  space-y-3 mt-2">
               <h4 className="text-lg md:text-xl font-bold">Web Development</h4>
@@ -33,7 +36,7 @@ const Services = () => {
         <div className="bg-[#222224] p-4 md:p-8 space-y-6 rounded-2xl">
           <div className="flex items-start gap-6">
             <div className="size-20 ">
-              <img src="/services/uiux.svg" alt="" className="size-full object-contain"/>
+              <img src={uiux} alt="" className="size-full object-contain"/>
             </div>
             <div className="  space-y-3 mt-2">
               <h4 className="text-lg md:text-xl font-bold">UI/UX</h4>
@@ -44,7 +47,7 @@ const Services = () => {
         <div className="bg-[#222224] p-4 md:p-8 space-y-6 rounded-2xl">
           <div className="flex items-start gap-6">
             <div className="size-20 ">
-              <img src="/services/app.svg" alt="" className="size-full object-contain"/>
+              <img src={app} alt="" className="size-full object-contain"/>
             </div>
             <div className="  space-y-3 mt-2">
               <h4 className="text-lg md:text-xl font-bold">Mobile Apps</h4>
